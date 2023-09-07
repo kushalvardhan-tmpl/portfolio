@@ -115,7 +115,9 @@
   }
   .downloadCv button {
     margin: 50px;
-    padding: 5px;
+    padding-inline: 7px;
+    padding-block: 5px;
     font-size: 10px;
+    width: auto;
   }
 }
