@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.inputForm {
+  background-color: rgba(73, 69, 69, 1);
+  color: white;
+  font-family: poppins;
+  height: 70vh;
+}
+.inputForm h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.fullName {
+  display: flex;
+  column-gap: 1%;
+  justify-content: center;
+  font-size: large;
+}
+.firstname {
+  display: flex;
+  flex-direction: column;
+}
+.lastname {
+  display: flex;
+  flex-direction: column;
+}
+#fname {
+  background-color: gray;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+#lname {
+  background-color: gray;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px;
+}
+#mail {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px 10px 0px;
+}
+#textmsg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0px 10px 0px;
+}
+
+#email {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background-color: gray;
+}
+#message {
+  padding: 30px;
+  background-color: gray;
+  border: 0;
+  border-radius: 5px;
+}
+.Sendbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.Sendbutton button {
+  background-color: transparent;
+  border: 1px white solid;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 15px 5px 15px;
+}

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.skillContainer {
+  background-image: url("../../public/assets/banner-2.png");
+  border: 0;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: poppins;
+  font-size: 25px;
+  color: white;
+}
+#skillhead {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 30px 0px;
+}
+.mySkillContent {
+  display: flex;
+  padding-inline: 10%;
+  gap: 20%;
+}
+.skillList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skillList ul {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.skillList ul span {
+  position: absolute;
+  right: 0;
+}
+
+#percentage-bar1 {
+  width: 95%;
+  height: 5px;
+  text-align: right;
+  background: linear-gradient(#fafbfc 95%, #110f0f 50%);
+  border-radius: 4px;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+#percentage-bar2 {
+  width: 75%;
+  height: 5px;
+  background: linear-gradient(to right, #f8f8f8 75%, #fcfbfb 50%);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+#percentage-bar3 {
+  width: 80%;
+  height: 5px;
+  background: linear-gradient(to right, #eef0f1 80%, #f9f9f9 50%);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+#percentage-bar4 {
+  width: 95%;
+  height: 5px;
+  background: linear-gradient(to right, #fbfbfb 95%, #f5f4f4 50%);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+#percentage-bar5 {
+  width: 50%;
+  height: 5px;
+  background: linear-gradient(to right, #f6f3f3 100%, #ccc 50%);
+  border-radius: 4px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+.downloadCv {
+  display: flex;
+}
+.downloadCv button {
+  display: flex;
+  color: white;
+  border: 3px white solid;
+  background-color: transparent;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-left: 100px;
+  padding: 15px;
+  font-size: 20px;
+}
+@media (max-width: 968px) {
+  .skillContainer {
+    font-size: 14px;
+  }
+  .skillList {
+    justify-content: space-evenly;
+  }
+  .downloadCv {
+    justify-content: center;
+  }
+  .downloadCv button {
+    margin: 50px;
+    padding: 5px;
+    font-size: 10px;
+  }
+}

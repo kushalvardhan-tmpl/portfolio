@@ -1,0 +1,42 @@
+.footer {
+  background-color: rgba(73, 69, 69, 1);
+  color: white;
+  height: 40vh;
+}
+h3 {
+  display: flex;
+  justify-content: start;
+  padding: ;
+}
+.footerabout {
+  display: flex;
+  font-size: small;
+  gap: 30%;
+  padding-inline: 20px;
+}
+.footerabout p {
+  padding-top: 30px;
+  width: 50%;
+}
+.others {
+  display: flex;
+  /* justify-content: end; */
+  flex-direction: column;
+}
+.others h2 {
+  display: flex;
+  justify-content: end;
+  padding-right: 40px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-self: flex-end;
+  gap: 10px;
+}
+.links a {
+  color: white;
+  padding-right: 60px;
+  align-content: center;
+}
