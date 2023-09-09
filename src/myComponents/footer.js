@@ -21,9 +21,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p>
-        &#169;Tunica Design. All Rights Reserved.Designed By Kushal Vardhan{" "}
-      </p>
+      <div id="end">
+        <p>
+          &#169;Tunica Design. All Rights Reserved.Designed By Kushal Vardhan{" "}
+        </p>
+      </div>
     </div>
   );
 };

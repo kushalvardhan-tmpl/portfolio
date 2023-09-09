@@ -23,7 +23,6 @@ const About = () => {
             <button id="btn">Contact me</button>
             <br />
             <div className="icons">
-              {/* <div id="fbIcon"> */}
               <button
                 onClick={() =>
                   openInNewTab("https://www.facebook.com/your-page-url")
@@ -31,8 +30,6 @@ const About = () => {
               >
                 <img src={"/assets/fb-logo.png"} alt="facebook" />
               </button>
-              {/* </div> */}
-              {/* <div id="twitterIcon"> */}
               <button
                 onClick={() =>
                   openInNewTab("https://twitter.com/login?lang=en")
@@ -40,14 +37,11 @@ const About = () => {
               >
                 <img src={"/assets/twitter-logo.png"} alt="twitter" />
               </button>
-              {/* </div> */}
-              {/* <div id="instaIcon"> */}
               <button
                 onClick={() => openInNewTab("https://www.instagram.com/")}
               >
                 <img src={"/assets/insta-logo.png"} alt="insta" />
               </button>
-              {/* </div> */}
             </div>
           </div>
         </div>

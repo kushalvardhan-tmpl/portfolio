@@ -7,6 +7,7 @@
   color: white;
   font-family: poppins;
   height: 70vh;
+  padding-bottom: 80px;
 }
 .inputForm h1 {
   display: flex;
@@ -21,29 +22,29 @@
 }
 .fullName {
   display: flex;
-  column-gap: 1%;
+  gap: 20px;
   justify-content: center;
   font-size: large;
 }
-.firstname {
+#firstname {
   display: flex;
   flex-direction: column;
 }
-.lastname {
+#lastname {
   display: flex;
   flex-direction: column;
 }
 #fname {
   background-color: gray;
   border: 0px;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
 }
 #lname {
   background-color: gray;
   border: 0px;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
 }
 #mail {
   display: flex;
@@ -60,24 +61,71 @@
 #email {
   padding: 10px;
   border: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: gray;
 }
 #message {
-  padding: 30px;
+  padding: 60px;
   background-color: gray;
   border: 0;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .Sendbutton {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 .Sendbutton button {
   background-color: transparent;
   border: 1px white solid;
-  border-radius: 20px;
+  border-radius: 25px;
   color: white;
-  padding: 5px 15px 5px 15px;
+  padding: 10px 30px 10px 30px;
+}
+
+.gmaps {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(73, 69, 69, 1);
+}
+.gmaps h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 425px) {
+  .fullName {
+    gap: 10px;
+  }
+  .inputForm {
+    width: 100%;
+  }
+  .form {
+    justify-content: center;
+    height: 50vh;
+  }
+
+  #message {
+    padding: 50px;
+  }
+  #fname {
+    width: 100px;
+    padding: 5px;
+  }
+  #lname {
+    width: 100px;
+    padding: 5px;
+  }
+  #fname {
+    width: 100px;
+    padding: 5px;
+  }
+  .Sendbutton {
+    margin-bottom: 20px;
+  }
+  .inputForm h1 {
+    font-size: larger;
+    color: rgb(22, 183, 70);
+  }
 }
