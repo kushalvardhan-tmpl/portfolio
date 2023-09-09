@@ -1,0 +1,15 @@
+.contactHead {
+  background-color: rgba(74, 69, 69, 1);
+  color: white;
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+}
+.contactHead h2 {
+  width: 20px;
+}
+.contactpage {
+  background-color: rgba(74, 69, 69, 1);
+  color: white;
+  border: 2px white solid;
+}

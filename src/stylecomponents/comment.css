@@ -1,0 +1,57 @@
+.Commentpage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(74, 69, 69, 1);
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(74, 69, 69, 1);
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  width: 40%;
+}
+.commentForm {
+  display: flex;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+#Name {
+  display: flex;
+  flex-direction: column;
+}
+#pMail {
+  display: flex;
+  flex-direction: column;
+}
+#name {
+  border: 0;
+}
+#personalMail {
+  border: 0;
+}
+#textcomment {
+  padding: 50px;
+}
+#personalUrl {
+  display: flex;
+  flex-direction: column;
+}
+.Commentbutton button {
+  color: white;
+  background-color: transparent;
+  border: 1px white solid;
+  padding: 2px 5px 2px 5px;
+}
+.Commentbutton {
+  display: flex;
+  justify-content: center;
+}

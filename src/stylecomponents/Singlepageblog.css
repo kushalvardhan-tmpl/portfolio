@@ -1,0 +1,87 @@
+.blogheadingcontainer {
+  display: flex;
+  height: 50vh;
+  background-image: url("../../public/assets/banner-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  font-family: poppins;
+  font-size: 30px;
+  position: relative;
+  border: 0;
+}
+.blogheading {
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+.blogheading h3 {
+  padding-inline: 30px;
+}
+.shareButtons {
+  /* width: 50%; */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  bottom: 40px;
+}
+#facebookShare {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  gap: 10px;
+  padding-right: 10px;
+  border: 1px white solid;
+}
+#facebookShare img {
+  height: 30px;
+}
+#twitterShare {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  gap: 10px;
+  padding-right: 10px;
+  border: 1px white solid;
+}
+#twitterShare img {
+  height: 30px;
+}
+
+.pageContent {
+  display: flex;
+  background-color: rgba(74, 69, 69, 1);
+  color: white;
+  padding-inline: 20px;
+  gap: 20px;
+}
+.blogcontent {
+  border: 2px white solid;
+}
+#motivationalImage img {
+  height: 200px;
+}
+.changePost {
+  display: flex;
+  gap: 100px;
+  background-color: rgba(74, 69, 69, 1);
+  padding: 20px;
+  justify-content: center;
+  border: 1px solid white;
+  width: 70vw;
+}
+
+.changePost button {
+  display: flex;
+  background-color: transparent;
+  color: white;
+  border: 0px;
+}
+.changepostcontainer {
+  display: flex;
+  background-color: rgba(74, 69, 69, 1);
+  padding: 20px;
+}
