@@ -1,10 +1,14 @@
-import React from "react";
 import Header from "../myComponents/header";
 import Footer from "../myComponents/footer";
 import About from "../myComponents/about";
 import Skills from "../myComponents/skills";
 import Contact from "../myComponents/contact";
+import MyBlogs from "../myComponents/blogsLists";
+import data from "../data";
+import data2 from "../data2";
+import CategoryData from "../myComponents/category";
 import "../stylecomponents/homebody.css";
+import "../App.css";
 
 const HomePage = () => {
   return (
@@ -21,6 +25,8 @@ const HomePage = () => {
       </div>
       <About />
       <Skills />
+      <CategoryData />
+      <MyBlogs data={data} />
       <Contact />
       <Footer />
     </div>

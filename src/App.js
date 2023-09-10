@@ -4,6 +4,7 @@ import HomePage from "./pages/homePage";
 import Blogs from "./pages/blogs";
 import HireMe from "./pages/hireme";
 import AboutPage from "./pages/aboutpage";
+import BlogItems from "./myComponents/blogsLists";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import SinglePage from "./pages/Singlepageblog";
