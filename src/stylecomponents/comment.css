@@ -13,6 +13,9 @@
   padding: 10px;
   width: 40%;
 }
+.comments h3 {
+  padding-bottom: 20px;
+}
 .commentForm {
   display: flex;
   justify-content: center;
@@ -34,9 +37,14 @@
 }
 #name {
   border: 0;
+  padding: 10px;
+  background-color: rgb(206, 191, 191);
 }
+
 #personalMail {
   border: 0;
+  padding: 10px;
+  background-color: rgb(206, 191, 191);
 }
 #textcomment {
   padding: 50px;
@@ -44,6 +52,15 @@
 #personalUrl {
   display: flex;
   flex-direction: column;
+}
+#weblink {
+  background-color: rgb(206, 191, 191);
+  padding: 10px;
+  border: 0;
+}
+#textcomment {
+  background-color: rgb(206, 191, 191);
+  border: 0px;
 }
 .Commentbutton button {
   color: white;
@@ -54,4 +71,17 @@
 .Commentbutton {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 1024px) {
+  .comments {
+    width: 100%;
+  }
+}
+@media (max-width: 770px) {
+  .comments {
+    width: 80%;
+  }
+  .details {
+    flex-direction: column;
+  }
 }

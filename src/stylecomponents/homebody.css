@@ -17,14 +17,17 @@
   color: white;
   padding-left: 10%;
 }
-
 #profilebutton {
+  margin-top: 20px;
+}
+#profilebutton a {
+  text-decoration: none;
   background-color: transparent;
   color: white;
   border: 1px white solid;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 10px;
-  margin-top: 30px;
+  cursor: pointer;
 }
 @media (max-width: 968px) {
   .headingcontainer {

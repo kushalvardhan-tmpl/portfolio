@@ -60,9 +60,11 @@
 }
 .blogcontent {
   border: 2px white solid;
+  width: 100%;
 }
 #motivationalImage img {
-  height: 200px;
+  height: 100%;
+  width: 100%;
 }
 .changePost {
   display: flex;
@@ -84,4 +86,78 @@
   display: flex;
   background-color: rgba(74, 69, 69, 1);
   padding: 20px;
+}
+.rightside {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+#searchbar {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+#search {
+  background-color: gray;
+  width: 80%;
+  border: 0;
+  color: white;
+}
+#searchbar button {
+  background-color: rgb(118, 9, 9);
+  color: white;
+  border: 0px;
+  padding: 2px;
+}
+.iconsblog {
+  display: flex;
+  gap: 0;
+}
+.iconsblog button {
+  background-color: transparent;
+  border: 0;
+}
+.iconsblog button img {
+  height: 50px;
+  cursor: pointer;
+  padding-top: 50px;
+  padding-inline: 10px;
+}
+@media (max-width: 768px) {
+  .iconsblog {
+    flex-direction: column;
+  }
+  .iconsblog button img {
+    height: 30px;
+  }
+}
+@media (max-width: 660px) {
+  .blogheading h3 {
+    font-size: 20px;
+  }
+  #searchbar {
+    flex-direction: column;
+  }
+  #search {
+    width: 100%;
+  }
+  #searchbar button {
+    width: 50px;
+    margin-top: 5px;
+  }
+  .shareButtons {
+    height: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #facebookShare img {
+    height: 20px;
+    border-radius: 20px;
+  }
+  #twitterShare img {
+    height: 20px;
+    border-radius: 20px;
+  }
+  .blogcontent {
+    font-size: 10px;
+  }
 }

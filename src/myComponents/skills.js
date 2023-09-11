@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../stylecomponents/Myskills.css";
 const Skills = () => {
   return (

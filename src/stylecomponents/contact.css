@@ -83,17 +83,6 @@
   padding: 10px 30px 10px 30px;
 }
 
-.gmaps {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(73, 69, 69, 1);
-}
-.gmaps h3 {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
 @media (max-width: 425px) {
   .fullName {
     gap: 10px;

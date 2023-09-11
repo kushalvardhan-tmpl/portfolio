@@ -4,14 +4,16 @@ import HomePage from "./pages/homePage";
 import Blogs from "./pages/blogs";
 import HireMe from "./pages/hireme";
 import AboutPage from "./pages/aboutpage";
-import BlogItems from "./myComponents/blogsLists";
+import ScrollToTop from "./myComponents/ScrollToTop";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import SinglePage from "./pages/Singlepageblog";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/contactpage" element={<ContactPage />}></Route>

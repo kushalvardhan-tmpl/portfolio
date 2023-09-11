@@ -1,29 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../stylecomponents/Header.css";
 
+import "../stylecomponents/Header.css";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
       <nav className="headbuttons">
         <div id="buttons">
-          <Link to="/">
-            <b>Home</b>
-          </Link>
-          <Link to="/aboutpage">
-            <b>About me</b>
-          </Link>
-
-          <Link to="/contactpage">
-            <b>Contact me</b>
-          </Link>
+          <nav id="homebtn">
+            <NavLink to="/">
+              <b>Home</b>
+            </NavLink>
+          </nav>
+          <nav id="aboutbtn">
+            <NavLink to="/aboutpage">
+              <b>About me</b>
+            </NavLink>
+          </nav>
+          <nav id="contactbtn">
+            <NavLink to="/contactpage">
+              <b>Contact me</b>
+            </NavLink>
+          </nav>
         </div>
+
         <div id="hireme">
-          <Link to="/hireme">
-            <button>
-              <b>Hire me</b>
-            </button>
-          </Link>
+          <nav id="hirebtn">
+            <NavLink to="/hireme">
+              <button>
+                <b>Hire me</b>
+              </button>
+            </NavLink>
+          </nav>
         </div>
       </nav>
     </div>

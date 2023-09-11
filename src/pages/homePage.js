@@ -9,6 +9,7 @@ import data2 from "../data2";
 import CategoryData from "../myComponents/category";
 import "../stylecomponents/homebody.css";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -18,9 +19,12 @@ const HomePage = () => {
         <div className="headings">
           <h1>Web Developer and Designer</h1>
           <h3>Practices Development since 2018</h3>
-          <button id="profilebutton">
-            <b>Go Profile</b>
-          </button>
+
+          <div id="profilebutton">
+            <Link to="/aboutpage">
+              <b>Go Profile</b>
+            </Link>
+          </div>
         </div>
       </div>
       <About />
