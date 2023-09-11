@@ -86,7 +86,7 @@ const SinglePage = () => {
         </div>
         <div className="rightside">
           <div id="searchbar">
-            <input type="search" name="" id="" />
+            <input type="search" name="" id="search" />
             <button>search</button>
           </div>
           <div className="popularblogs">
@@ -98,7 +98,7 @@ const SinglePage = () => {
           <div className="popularCategory">
             <h5>Categories</h5>
           </div>
-          <div className="socialLinks">
+          <div className="iconsblog">
             <button
               onClick={() =>
                 openInNewTab("https://www.facebook.com/your-page-url")

@@ -6,9 +6,9 @@ import Contact from "../myComponents/contact";
 const HireMe = () => {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <About />
-      <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );

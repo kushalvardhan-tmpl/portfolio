@@ -1,4 +1,5 @@
 import "../stylecomponents/about.css";
+import { Link } from "react-router-dom";
 
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
@@ -20,7 +21,9 @@ const About = () => {
               est dignissimos sit a debitis! Aliquam totam debitis nam sequi
               odit soluta laborum.
             </p>
-            <button id="btn">Contact me</button>
+            <Link to="/contactPage">
+              <button id="btn">Contact me</button>
+            </Link>
             <br />
             <div className="icons">
               <button

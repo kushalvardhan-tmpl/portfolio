@@ -61,3 +61,16 @@
     font-size: 10px;
   }
 }
+#homebtn a.active {
+  background-color: red;
+}
+#aboutbtn a.active {
+  background-color: red;
+}
+#contactbtn a.active {
+  background-color: red;
+}
+#hirebtn a.active {
+  /* color: rgb(254, 246, 246); */
+  background-color: rgba(73, 69, 69, 1);
+}

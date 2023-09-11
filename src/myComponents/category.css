@@ -1,4 +1,6 @@
 .categories {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(74, 69, 69, 1);
   color: white;
 }
