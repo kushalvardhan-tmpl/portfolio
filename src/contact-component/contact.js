@@ -1,5 +1,5 @@
 import React from "react";
-import "../stylecomponents/contact.css";
+import "./contact.css";
 
 const Contact = () => {
   return (
@@ -29,12 +29,20 @@ const Contact = () => {
             <div id="mail">
               <label htmlFor="email"> Email</label>
 
-              <input type="text" id="email" name="email" />
+              <input type="email" id="email" name="email" />
             </div>
             <div id="textmsg">
               <label htmlFor="message"> Message</label>
 
-              <input type="text" id="message" name="message" />
+              {/* <input
+                type="text"
+                maxlength="100"
+                id="message"
+                name="message"
+                size="50"
+              /> */}
+
+              <textarea id="message" name="messsage" rows="10" />
             </div>
           </form>
         </div>

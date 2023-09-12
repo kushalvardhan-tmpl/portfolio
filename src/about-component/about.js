@@ -1,4 +1,4 @@
-import "../stylecomponents/about.css";
+import "../about-component/about.css";
 import { Link } from "react-router-dom";
 
 const openInNewTab = (url) => {

@@ -1,13 +1,11 @@
 import Header from "../myComponents/header";
 import Footer from "../myComponents/footer";
-import About from "../myComponents/about";
-import Skills from "../myComponents/skills";
-import Contact from "../myComponents/contact";
-import MyBlogs from "../myComponents/blogsLists";
-import data from "../data";
-import data2 from "../data2";
-import CategoryData from "../myComponents/category";
-import "../stylecomponents/homebody.css";
+import About from "../about-component/about";
+import Skills from "../skills-component/skills";
+import Contact from "../contact-component/contact";
+import MyBlogs from "../blogs-component/myblogs";
+import CategoryData from "../projetcs-component/category";
+import "../home-component/homebody.css";
 import "../App.css";
 import { Link } from "react-router-dom";
 
@@ -30,7 +28,7 @@ const HomePage = () => {
       <About />
       <Skills />
       <CategoryData />
-      <MyBlogs data={data} />
+      <MyBlogs />
       <Contact />
       <Footer />
     </div>
