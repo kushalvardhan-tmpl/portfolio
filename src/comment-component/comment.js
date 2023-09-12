@@ -1,4 +1,4 @@
-import "../stylecomponents/comment.css";
+import "./comment.css";
 export const Comment = () => {
   return (
     <div className="Commentpage">

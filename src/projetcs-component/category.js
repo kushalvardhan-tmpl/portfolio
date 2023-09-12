@@ -1,3 +1,6 @@
+import { useState } from "react";
+import Cards from "./cards";
+
 const data2 = [
   {
     id: 1,
@@ -24,4 +27,39 @@ const data2 = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit deleniti dolorem cupiditate porro provident, deserunt sint minima! Aut quidem eius nam quis rem iusto deleniti facilis alias, eaque ipsum!",
   },
 ];
-export default data2;
+
+function CategoryData() {
+  const [item, setItems] = useState(data2);
+  const categItems = [...new Set(data2.map((val) => val.category))];
+  const filterItems = (categ) => {
+    const newCategory = data2.filter((newval) => newval.category === categ);
+    setItems(newCategory);
+  };
+  return (
+    <div className="categories">
+      <h1 className="Projects">My Projects</h1>
+      <Buttons
+        categItems={categItems}
+        filterItems={filterItems}
+        setItems={setItems}
+      />
+      <Cards item={item} />
+    </div>
+  );
+  function Buttons({ categItems, filterItems, setItems }) {
+    return (
+      <div className="Category-btn">
+        <button className="All-btn" onClick={() => setItems(data2)}>
+          All
+        </button>
+        {categItems.map((val) => (
+          <button className="btn-catg" onClick={() => filterItems(val)}>
+            {val}
+          </button>
+        ))}
+      </div>
+    );
+  }
+}
+
+export default CategoryData;

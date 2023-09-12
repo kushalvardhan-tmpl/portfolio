@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../stylecomponents/Myskills.css";
+import "./Myskills.css";
 const Skills = () => {
   return (
     <div>

@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../myComponents/header";
 import Footer from "../myComponents/footer";
 import { Link } from "react-router-dom";
-// import MyBlogs from "../myComponents/blogsLists";
-// import data from "../data";
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
 };

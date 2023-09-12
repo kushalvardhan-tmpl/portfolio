@@ -1,3 +1,8 @@
+.blogpage-single {
+  display: flex;
+  flex-direction: column;
+}
+
 .blogheadingcontainer {
   display: flex;
   height: 50vh;
@@ -50,18 +55,41 @@
 #twitterShare img {
   height: 30px;
 }
-
+.page-heading {
+  border: 3px solid white;
+  width: max-content;
+  position: relative;
+  bottom: 10px;
+  left: 2px;
+  background-color: rgba(74, 69, 69, 1);
+}
 .pageContent {
   display: flex;
+  padding-inline: 10px;
   background-color: rgba(74, 69, 69, 1);
-  color: white;
-  padding-inline: 20px;
   gap: 20px;
 }
-.blogcontent {
-  border: 2px white solid;
-  width: 100%;
+
+.blog-page {
+  display: flex;
+  flex-direction: column;
 }
+.main-blog-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 2px white solid;
+  gap: 15px;
+  margin-top: 20px;
+}
+.full-blog-img {
+  display: flex;
+  justify-content: center;
+}
+.full-blog-img img {
+  width: 80%;
+}
+
 #motivationalImage img {
   height: 100%;
   width: 100%;

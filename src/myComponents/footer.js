@@ -1,5 +1,5 @@
 import "../stylecomponents/footer.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
@@ -13,11 +13,11 @@ const Footer = () => {
           consectetur praesentium odio, provident deserunt temporibus nam rem?
         </p>
         <div className="others">
-          <h2>Other Links</h2>
+          <h2>Links</h2>
           <div className="links">
-            <Link to="/">Home</Link>
-            <Link to="/aboutpage">About me</Link>
-            <Link to="/contactpage">Contact me</Link>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/aboutpage">About me</NavLink>
+            <NavLink to="/contactpage">Contact me</NavLink>
           </div>
         </div>
       </div>

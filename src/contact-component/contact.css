@@ -64,11 +64,14 @@
   border-radius: 10px;
   background-color: gray;
 }
+
 #message {
-  padding: 60px;
+  /* padding: 60px; */
   background-color: gray;
+  /* height: 20px; */
   border: 0;
   border-radius: 10px;
+  color: white;
 }
 .Sendbutton {
   display: flex;

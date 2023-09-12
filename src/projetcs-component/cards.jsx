@@ -1,5 +1,3 @@
-import React from "react";
-import "./cards.css";
 function Cards({ item }) {
   return (
     <div className="cate-Container">
