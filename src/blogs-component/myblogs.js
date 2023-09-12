@@ -53,6 +53,11 @@ const MyBlogs = () => {
           </div>
         ))}
       </div>
+      <div className="Loadmore">
+        <Link to="/blogs">
+          <button>Load more</button>
+        </Link>
+      </div>
     </>
   );
 };

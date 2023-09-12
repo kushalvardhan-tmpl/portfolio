@@ -4,6 +4,7 @@ import Header from "../myComponents/header";
 import "./Singlepageblog.css";
 import Footer from "../myComponents/footer";
 import { Comment } from "../comment-component/comment";
+import PopularCategory from "./popularpost";
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
 };
@@ -57,10 +58,6 @@ const SinglePage = () => {
                 className="blog-content1"
                 dangerouslySetInnerHTML={{ __html: users?.blog?.content }}
               />
-              {/* <div className="full-blog-img">
-                  <img src={blogCont.image} />
-                </div>
-                <div className="blog-content2">{blogCont.content}</div> */}
             </div>
           </div>
           <div className="rightside">
@@ -69,7 +66,12 @@ const SinglePage = () => {
               <button>search</button>
             </div>
             <div className="popularblogs">
-              <h5>Popular Posts</h5>
+              {users?.blogs?.map((blog) => (
+                <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}>
+                  hiiiiiiiiiiii
+                </Link>
+              ))}
+              <PopularCategory />
             </div>
             <div className="populartags">
               <h5>Tags</h5>
@@ -106,9 +108,9 @@ const SinglePage = () => {
         <div className="changepostcontainer">
           <div className="changePost">
             {users?.prevPost !== null && (
-              <button>
+              <Link to={`/Singlepageblog/${users?.prevPost?.id}`}>
                 <img src={"/assets/left.png"} alt="previous" /> Prev Post
-              </button>
+              </Link>
             )}
             <Link to={`/Singlepageblog/${users?.nextPost?.id}`}>
               Next Post <img src={"/assets/right.png"} alt="next" />

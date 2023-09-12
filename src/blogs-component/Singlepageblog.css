@@ -52,6 +52,16 @@
   padding-right: 10px;
   border: 1px white solid;
 }
+#twitterShare a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+#facebookShare a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
 #twitterShare img {
   height: 30px;
 }
@@ -81,6 +91,9 @@
   border: 2px white solid;
   gap: 15px;
   margin-top: 20px;
+}
+.blog-content1 img {
+  width: 100%;
 }
 .full-blog-img {
   display: flex;

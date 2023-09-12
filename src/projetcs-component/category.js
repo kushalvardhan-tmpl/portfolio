@@ -1,65 +1,69 @@
-import { useState } from "react";
-import Cards from "./cards";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./category.css";
 
-const data2 = [
-  {
-    id: 1,
-    image: "/assets/banner-2.png",
-    title:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, quod!",
-    category: "Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit deleniti dolorem cupiditate porro provident, deserunt sint minima! Aut quidem eius nam quis rem iusto deleniti facilis alias, eaque ipsum!",
-  },
-  {
-    id: 2,
-    image: "/assets/banner-1.png",
-    title:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, quod!",
-    category: "technology",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit deleniti dolorem cupiditate porro provident, deserunt sint minima! Aut quidem eius nam quis rem iusto deleniti facilis alias, eaque ipsum!",
-  },
-  {
-    id: 3,
-    image: "/assets/banner-1.png",
-    title:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, quod!",
-    category: "education",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit deleniti dolorem cupiditate porro provident, deserunt sint minima! Aut quidem eius nam quis rem iusto deleniti facilis alias, eaque ipsum!",
-  },
-];
+const apiUrlCategories =
+  "https://portfolio-website-lkvm.onrender.com/api/home/project-categories";
 
-function CategoryData() {
-  const [item, setItems] = useState(data2);
-  const categItems = [...new Set(data2.map((val) => val.category))];
-  const filterItems = (categ) => {
-    const newCategory = data2.filter((newval) => newval.category === categ);
-    setItems(newCategory);
-  };
+function CategoryCards() {
+  const [categories, setCategories] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [categoryProjects, setCategoryProjects] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(apiUrlCategories)
+      .then((response) => {
+        setCategories(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching categories: ", error);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (selectedCategory !== null) {
+      const apiUrlProjects = `https://portfolio-website-lkvm.onrender.com/api/home/projects/${selectedCategory}`;
+      axios
+        .get(apiUrlProjects)
+        .then((response) => {
+          setCategoryProjects(response.data);
+        })
+        .catch((error) => {
+          console.error("Error fetching projects: ", error);
+        });
+    } else {
+      setCategoryProjects([]);
+    }
+  }, [selectedCategory]);
+
   return (
-    <div className="categories">
-      <h1 className="Projects">My Projects</h1>
-      <Buttons
-        categItems={categItems}
-        filterItems={filterItems}
-        setItems={setItems}
-      />
-      <Cards item={item} />
-    </div>
-  );
-  function Buttons({ categItems, filterItems, setItems }) {
-    return (
-      <div className="Category-btn">
-        <button className="All-btn" onClick={() => setItems(data2)}>
-          All
-        </button>
-        {categItems.map((val) => (
-          <button className="btn-catg" onClick={() => filterItems(val)}>
-            {val}
+    <div className="categories-section">
+      <h2>Categories</h2>
+      <div className="category-buttons">
+        <button onClick={() => setSelectedCategory(null)}>All</button>
+        {categories.map((category) => (
+          <button
+            key={category.id}
+            onClick={() => setSelectedCategory(category.id)}
+          >
+            {category.value}
           </button>
         ))}
       </div>
-    );
-  }
+      <div className="category-cards">
+        {categoryProjects.map((project) => (
+          <div key={project.id} className="category-card">
+            <h3>{project.projectName}</h3>
+            <div className="image-project">
+              <img src={project.image} />
+            </div>
+          </div>
+        ))}
+        console.log({categoryProjects.id});
+      </div>
+    </div>
+  );
 }
 
-export default CategoryData;
+export default CategoryCards;

@@ -5,7 +5,6 @@ import Blogs from "./blogs-component/blogs";
 import HireMe from "./hireme-component/hireme";
 import AboutPage from "./about-component/aboutpage";
 import ScrollToTop from "./myComponents/ScrollToTop";
-
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import SinglePage from "./blogs-component/Singlepageblog";
