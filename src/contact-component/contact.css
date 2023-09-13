@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 .inputForm {
   background-color: rgba(73, 69, 69, 1);
   color: white;
@@ -39,12 +35,14 @@
   border: 0px;
   border-radius: 10px;
   padding: 10px;
+  color: white;
 }
 #lname {
   background-color: gray;
   border: 0px;
   border-radius: 10px;
   padding: 10px;
+  color: white;
 }
 #mail {
   display: flex;
@@ -63,12 +61,12 @@
   border: 0;
   border-radius: 10px;
   background-color: gray;
+  color: white;
 }
 
 #message {
-  /* padding: 60px; */
   background-color: gray;
-  /* height: 20px; */
+
   border: 0;
   border-radius: 10px;
   color: white;
@@ -86,9 +84,11 @@
   padding: 10px 30px 10px 30px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .fullName {
     gap: 10px;
+    flex-direction: column;
+    width: 100%;
   }
   .inputForm {
     width: 100%;
@@ -97,21 +97,20 @@
     justify-content: center;
     height: 50vh;
   }
-
-  #message {
-    padding: 50px;
-  }
   #fname {
-    width: 100px;
+    width: 100%;
     padding: 5px;
   }
   #lname {
-    width: 100px;
+    width: 100%;
     padding: 5px;
   }
-  #fname {
-    width: 100px;
-    padding: 5px;
+
+  #email {
+    width: 95%;
+  }
+  #message {
+    width: 100%;
   }
   .Sendbutton {
     margin-bottom: 20px;

@@ -48,6 +48,7 @@ function CategoryCards() {
             onClick={() => setSelectedCategory(category.id)}
           >
             {category.value}
+            <img src={category.image} />
           </button>
         ))}
       </div>
@@ -60,7 +61,6 @@ function CategoryCards() {
             </div>
           </div>
         ))}
-        console.log({categoryProjects.id});
       </div>
     </div>
   );

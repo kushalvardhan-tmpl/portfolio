@@ -67,9 +67,7 @@ const SinglePage = () => {
             </div>
             <div className="popularblogs">
               {users?.blogs?.map((blog) => (
-                <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}>
-                  hiiiiiiiiiiii
-                </Link>
+                <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}></Link>
               ))}
               <PopularCategory />
             </div>
