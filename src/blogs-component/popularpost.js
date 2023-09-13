@@ -21,13 +21,15 @@ const PopularCategory = () => {
     <div className="popularCategory">
       <h1>Popular Posts</h1>
       <div className="popul-post">
-        {popularPosts.map((post) => (
-          <Link to={`/Singlepageblog/${post.id}`} id="posts" key={post.id}>
-            <div className="title-post"> {post.title}</div>
-            <div className="image-Popular">
-              <img src={post.image} />
-            </div>
-          </Link>
+        {popularPosts.slice(0, 3).map((post) => (
+          <>
+            <Link to={`/Singlepageblog/${post.id}`} id="posts" key={post.id}>
+              <div className="title-post"> {post.title}</div>
+              <div className="image-Popular">
+                <img src={post.image} />
+              </div>
+            </Link>
+          </>
         ))}
       </div>
     </div>

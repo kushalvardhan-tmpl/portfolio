@@ -6,8 +6,9 @@ const API =
   "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1";
 const MyBlogs = () => {
   const [users, setUsers] = useState([]);
-
+  // const [loading, setLoading] = useState(false);
   const fetchBlogs = async (url) => {
+    // setLoading(true);
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -17,6 +18,7 @@ const MyBlogs = () => {
     } catch (err) {
       console.error(err);
     }
+    // setLoading(false);
   };
 
   useEffect(() => {
@@ -31,6 +33,7 @@ const MyBlogs = () => {
         <h3>My blogs</h3>
       </div>
       <div className="blog-main-container">
+        {/* {loading ? <div></div> : <div> </div>} */}
         {users?.blogs?.map((blog) => (
           <div key={blog.id} className="blog-Cont-main">
             <div className="blog-posts">

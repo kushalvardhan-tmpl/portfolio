@@ -43,7 +43,10 @@ const Skills = () => {
             </div>
           </div>
           <div className="downloadCv">
-            <button>Download My CV</button>
+            <button>
+              {" "}
+              <span>Download My CV</span>
+            </button>
           </div>
         </div>
       </>
