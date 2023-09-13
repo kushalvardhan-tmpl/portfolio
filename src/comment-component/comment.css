@@ -39,34 +39,40 @@
   border: 0;
   padding: 10px;
   background-color: rgb(206, 191, 191);
+  color: white;
 }
 
 #personalMail {
   border: 0;
   padding: 10px;
   background-color: rgb(206, 191, 191);
+  color: white;
 }
-#textcomment {
+/* #textcomment {
   padding: 50px;
-}
+} */
 #personalUrl {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 #weblink {
   background-color: rgb(206, 191, 191);
   padding: 10px;
   border: 0;
+  color: white;
 }
 #textcomment {
   background-color: rgb(206, 191, 191);
   border: 0px;
+  color: white;
 }
 .Commentbutton button {
   color: white;
   background-color: transparent;
   border: 1px white solid;
   padding: 2px 5px 2px 5px;
+  cursor: pointer;
 }
 .Commentbutton {
   display: flex;

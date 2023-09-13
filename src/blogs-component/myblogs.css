@@ -64,11 +64,35 @@
   color: white;
 }
 .Loadmore {
-  background-color: rgba(74, 69, 69, 1);
   display: flex;
   justify-content: center;
+  background-color: rgba(74, 69, 69, 1);
 }
-.Loadmore button {
+.Loadmore a button {
+  color: white;
   background-color: transparent;
   border: 2px solid white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .blog-Cont-main {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .Loadmore {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(74, 69, 69, 1);
+  }
+
+  .Loadmore a button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+  }
 }

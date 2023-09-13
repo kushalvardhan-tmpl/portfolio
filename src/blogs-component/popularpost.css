@@ -23,7 +23,7 @@
 }
 #posts {
   cursor: pointer;
-  background-color: rgba(74, 69, 69, 1); /* Set the background color here */
+  background-color: rgba(74, 69, 69, 1);
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
