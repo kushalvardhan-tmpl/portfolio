@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./myblogs.css";
 import { Link } from "react-router-dom";
 // import Loader from "../myComponents/loader";
+import moment from "moment";
 
 const API =
   "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1";
@@ -47,7 +48,9 @@ const MyBlogs = () => {
                 <div className="blog-desc">{blog.shortDescription}</div>
                 <div className="blogcontent">{blog.content}</div>
                 <div className="dateandauthor">
-                  <div className="date-published">{blog.createdAt}</div>
+                  <div className="date-published">
+                    {moment(blog.createdAt).format("MM / MM / YYYY")}
+                  </div>
                   <div className="author">
                     {blog.Author.firstName + " " + blog.Author.lastName}
                   </div>

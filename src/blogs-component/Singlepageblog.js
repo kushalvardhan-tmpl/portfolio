@@ -4,6 +4,7 @@ import Header from "../myComponents/header";
 import "./Singlepageblog.css";
 import Footer from "../myComponents/footer";
 import Comment from "../comment-component/comment";
+import moment from "moment";
 
 import PopularCategory from "./popularpost";
 import PopularTags from "./populartags";
@@ -40,14 +41,29 @@ const SinglePage = () => {
         <div className="blogheadingcontainer">
           <div className="blogheading">
             <h3>{users?.blog?.title}</h3>
+            <div className="date-author">
+              <div id="author-name">
+                <img src="/assets/user.png" />
+                {users?.blog?.Author?.firstName}
+              </div>
+              <div className="date">
+                <img src="/assets/vector.png" alt="" />
+
+                {moment(users?.blog?.createdAt).format("MM/MM/YYYY")}
+              </div>
+            </div>
             <div className="shareButtons">
               <button id="facebookShare">
-                <img src={"/assets/fb-logo.png"} alt="fbLogo" /> Share on
-                Facebook
+                <Link to="https://www.facebook.com/">
+                  <img src={"/assets/fb-logo.png"} alt="fbLogo" /> Share on
+                  Facebook
+                </Link>
               </button>
               <button id="twitterShare">
-                <img src={"/assets/twitter-logo.png"} alt="tweetlogo" /> Share
-                on Twitter
+                <Link to="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
+                  <img src={"/assets/twitter-logo.png"} alt="tweetlogo" /> Share
+                  on Twitter
+                </Link>
               </button>
             </div>
           </div>
