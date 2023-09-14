@@ -1,10 +1,36 @@
+
+
+import React, { useState, useEffect } from "react";
 import "../about-component/about.css";
 import { Link } from "react-router-dom";
 
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
 };
+
 const About = () => {
+  const [apiData, setApiData] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://portfolio-website-lkvm.onrender.com/api/home/about-me"
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setApiData(data);
+        } else {
+          console.error("Failed to fetch data");
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="Container">
@@ -15,12 +41,7 @@ const About = () => {
           </div>
           <div className="aboutme">
             <h1>Saikat Mondal</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-              nihil, quibusdam cumque totam praesentium eligendi neque, quaerat
-              est dignissimos sit a debitis! Aliquam totam debitis nam sequi
-              odit soluta laborum.
-            </p>
+            <p>{apiData ? apiData.description : "Loading..."}</p>
             <Link to="/contactPage">
               <button id="btn">Contact me</button>
             </Link>

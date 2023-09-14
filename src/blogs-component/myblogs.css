@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .blog-main-container {
   display: flex;
   flex-wrap: wrap;
@@ -13,12 +17,13 @@
 .blog-Cont-main {
   width: calc(33.33% - 20px);
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(18, 12, 12, 0.1);
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  border: 2px solid rgb(70, 63, 63);
 }
-.blog-Cont-main :hover {
+.blog-main-container :hover {
   background-color: black;
   color: white;
   text-decoration: none;
@@ -30,7 +35,9 @@
 
 .blog-Image img {
   max-width: 100%;
-  height: auto;
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
 }
 
 .blog-Title {
@@ -62,11 +69,14 @@
   display: flex;
   justify-content: center;
   color: white;
+  font-size: 45px;
+  font-weight: 700;
 }
 .Loadmore {
   display: flex;
   justify-content: center;
   background-color: rgba(74, 69, 69, 1);
+  padding-bottom: 2rem;
 }
 .Loadmore a button {
   color: white;
@@ -74,6 +84,11 @@
   border: 2px solid white;
   padding: 5px 10px 5px 10px;
   border-radius: 20px;
+  cursor: pointer;
+  font-size: 29px;
+}
+.Loadmore a :hover {
+  background-color: rgb(104, 7, 7);
 }
 
 @media (max-width: 768px) {
@@ -90,9 +105,10 @@
 
   .Loadmore a button {
     color: white;
-    background-color: transparent;
+
     border: 2px solid white;
     padding: 5px 10px 5px 10px;
     border-radius: 20px;
+    margin: 20px;
   }
 }
