@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../myComponents/header";
 import Footer from "../myComponents/footer";
+import moment from "moment";
 import { Link } from "react-router-dom";
 import "./myblogs.css";
 import "./Singlepageblog.css";
@@ -45,9 +46,6 @@ const MyBlogs = () => {
         </div>
         <div className="pageContent">
           <div className="main-blog-content">
-            <div id="head-blog">
-              <h3>My blogs</h3>
-            </div>
             <div className="blog-category"></div>
             <div className="blog-main-container">
               {users?.blogs?.map((blog) => (
@@ -63,7 +61,9 @@ const MyBlogs = () => {
                       <div className="blog-desc">{blog.shortDescription}</div>
                       <div className="blogcontent">{blog.content}</div>
                       <div className="dateandauthor">
-                        <div className="date-published">{blog.createdAt}</div>
+                        <div className="date-published">
+                          {moment(blog.createdAt).format("MM/MM/YYYY")}
+                        </div>
                         <div className="author">
                           {blog.Author.firstName + " " + blog.Author.lastName}
                         </div>

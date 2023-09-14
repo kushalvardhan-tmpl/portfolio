@@ -99,6 +99,9 @@
 .Sendbutton :hover {
   background-color: #0056b3;
 }
+.maps-head h3 {
+  font-size: 25px;
+}
 @media (max-width: 670px) {
   .form form {
     padding: 2rem 2rem 0rem;
@@ -147,5 +150,15 @@
   }
   .inputForm h1 {
     font-size: 30px;
+  }
+
+  .google-map-code iframe {
+    margin-block: 10%;
+    border-radius: 20px;
+    padding-inline: 0px !important;
+    width: 100%;
+  }
+  #maps {
+    width: 70%;
   }
 }

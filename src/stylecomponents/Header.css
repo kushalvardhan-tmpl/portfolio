@@ -71,13 +71,20 @@
   }
 }
 #homebtn a.active {
+  padding-inline: 10px !important;
   background-color: red;
 }
 #aboutbtn a.active {
-  background-color: red;
+  background-color: red !important;
+  padding-inline: 10px !important;
 }
 #contactbtn a.active {
   background-color: red;
+  padding-inline: 10px !important;
+}
+#blogs-btn a.active {
+  background-color: red;
+  padding-inline: 10px !important;
 }
 #hirebtn a.active {
   /* color: rgb(254, 246, 246); */

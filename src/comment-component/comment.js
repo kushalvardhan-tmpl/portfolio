@@ -24,6 +24,7 @@ const Comment = ({ blogId }) => {
     try {
       const response = await fetch(
         `https://portfolio-website-lkvm.onrender.com/api/blogs/comment/${blogId}`,
+
         {
           method: "POST",
           headers: {
@@ -35,16 +36,24 @@ const Comment = ({ blogId }) => {
 
       if (response.ok) {
         console.log("Comment submitted successfully");
+        setCommentStatus("Comment sent successfully");
         setCommentData({
           name: "",
           email: "",
           website: "",
           message: "",
         });
-        setCommentStatus("Comment sent successfully");
+
+        setTimeout(() => {
+          setCommentStatus("");
+        }, 3000);
       } else {
         console.error("Failed to submit comment");
         setCommentStatus("Failed to send comment");
+
+        setTimeout(() => {
+          setCommentStatus("");
+        }, 3000);
       }
     } catch (error) {
       console.error("Error:", error);
