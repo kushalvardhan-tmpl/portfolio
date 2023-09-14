@@ -146,9 +146,23 @@
   }
   .details {
     flex-direction: column;
+    gap: 5px;
   }
 }
 @media (max-width: 350px) {
+  .details {
+    gap: 5px;
+  }
+  #name {
+    padding: 2px;
+  }
+  #personalMail {
+    padding: 2px;
+  }
   #weblink {
+    padding: 2px;
+  }
+  #textcomment {
+    padding: 5px;
   }
 }

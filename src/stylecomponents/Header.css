@@ -58,7 +58,8 @@
     height: 5vh;
   }
   #hireme {
-    padding: 2px;
+    padding: 0px;
+    background-color: transparent;
   }
   #hireme button {
     font-size: 10px;
@@ -71,22 +72,23 @@
   }
 }
 #homebtn a.active {
-  padding-inline: 10px !important;
+  padding-inline: 8px !important;
   background-color: red;
 }
-#aboutbtn a.active {
+/* #aboutbtn a.active {
   background-color: red !important;
-  padding-inline: 10px !important;
-}
+  padding-inline: 8px !important; */
+/* } */
 #contactbtn a.active {
   background-color: red;
-  padding-inline: 10px !important;
+  padding-inline: 8px !important;
 }
 #blogs-btn a.active {
   background-color: red;
-  padding-inline: 10px !important;
+  padding-inline: 8px !important;
 }
 #hirebtn a.active {
   /* color: rgb(254, 246, 246); */
-  background-color: rgba(73, 69, 69, 1);
+  background-color: red;
+  padding-inline: 8px !important;
 }
