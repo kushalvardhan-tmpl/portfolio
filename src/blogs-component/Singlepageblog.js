@@ -8,6 +8,7 @@ import moment from "moment";
 
 import PopularCategory from "./popularpost";
 import PopularTags from "./populartags";
+import SearchResults from "./search";
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
 };
@@ -110,13 +111,14 @@ const SinglePage = () => {
                 )}
               </div>
             </div>
-            <Comment />
+            <Comment blogId={blogId} />
           </div>
           <div className="rightside">
-            <div id="searchbar">
+            {/* <div id="searchbar">
               <input type="search" name="search" id="search" />
               <button>search</button>
-            </div>
+            </div> */}
+            <SearchResults />
             <div className="popularblogs">
               {users?.blogs?.map((blog) => (
                 <Link to={`/Singlepageblog/${blog?.id}`} key={blog?.id}></Link>

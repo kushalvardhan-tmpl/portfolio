@@ -22,6 +22,11 @@ const Header = () => {
               <b>Contact me</b>
             </NavLink>
           </nav>
+          <nav id="blogs-btn">
+            <NavLink to="/blogs">
+              <b>blogs</b>
+            </NavLink>
+          </nav>
         </div>
 
         <div id="hireme">

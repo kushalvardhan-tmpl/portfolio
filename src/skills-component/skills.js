@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import "./Myskills.css";
+import DownloadButton from "./download";
+
 const Skills = () => {
   return (
     <div>
@@ -39,12 +40,8 @@ const Skills = () => {
               <div id="percentage-bar5"></div>
             </div>
           </div>
-          <div className="downloadCv">
-            <button>
-              {" "}
-              <span>Download My CV</span>
-            </button>
-          </div>
+
+          <DownloadButton />
         </div>
       </>
     </div>
