@@ -38,23 +38,9 @@ const MyBlogs = () => {
       <Header />
 
       <div className="blogpage-single">
-        <div className="blogheadingcontainer">
-          <div className="blogheading">
-            <h3>{users?.blog?.title}</h3>
-            <div className="shareButtons">
-              <button id="facebookShare">
-                <Link to="https://www.facebook.com/your-page-url">
-                  <img src="/assets/fb-logo.png" alt="fbLogo" /> Share on
-                  Facebook
-                </Link>
-              </button>
-              <button id="twitterShare">
-                <Link to="https://twitter.com/login?lang=en">
-                  <img src="/assets/twitter-logo.png" alt="tweetlogo" /> Share
-                  on Twitter
-                </Link>
-              </button>
-            </div>
+        <div className="myBlog-head">
+          <div className="myBlog-h">
+            <h3>My Blogs</h3>
           </div>
         </div>
         <div className="pageContent">

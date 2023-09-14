@@ -176,12 +176,21 @@
   .skillList {
     font-size: 15px;
   }
+  .mySkillContent p {
+    font-size: 15px;
+  }
+  #skillhead {
+    font-size: 30px;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 520px) {
   .skillContainer {
     font-size: 15px;
   }
   .skillList {
+    font-size: 15px;
+  }
+  .downloadCv button span {
     font-size: 15px;
   }
 }

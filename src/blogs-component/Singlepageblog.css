@@ -109,36 +109,9 @@
 }
 
 #motivationalImage img {
-  height: 100%;
-  width: 100%;
-}
-.changePost {
-  display: flex;
-  gap: 100px;
-  background-color: rgba(74, 69, 69, 1);
-  padding: 20px 0 20px 0;
-  justify-content: center;
-  border: 1px solid white;
-  width: 100%;
+  width: 50%;
 }
 
-.changePost a {
-  display: flex;
-  background-color: transparent;
-  color: white;
-  border: 0px;
-  cursor: pointer;
-  text-decoration: none;
-}
-.changePost :hover {
-  background-color: green;
-}
-
-.changepostcontainer {
-  display: flex;
-  background-color: rgba(74, 69, 69, 1);
-  padding: 20px;
-}
 .rightside {
   display: flex;
   flex-direction: column;
@@ -197,14 +170,48 @@
   width: fit-content;
   padding: 1px;
 }
-.next-Img img {
-  width: 100%;
-}
-.next-Img a img {
-  width: 100%;
+
+.changePost {
+  display: flex;
+  border: 1px solid white;
+  height: 5%;
+  align-items: center;
+  gap: 5%;
+  padding-inline: 15px;
 }
 .prev-Img img {
-  width: 100%;
+  width: 100px;
+}
+.next-Img img {
+  width: 100px;
+}
+#prev-post {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+#prev-post > img {
+  display: flex;
+
+  height: 5%;
+}
+#next-post > img {
+  height: 5%;
+}
+#prev-post a {
+  text-decoration: none;
+  color: white;
+}
+#next-post {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+#next-post a {
+  color: white;
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .iconsblog {
@@ -215,6 +222,12 @@
   }
 }
 @media (max-width: 660px) {
+  .pageContent {
+    flex-direction: column;
+  }
+  .main-blog-content {
+    width: 90%;
+  }
   .blogheading h3 {
     font-size: 20px;
   }
