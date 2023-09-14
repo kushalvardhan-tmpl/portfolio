@@ -19,16 +19,37 @@
   display: flex;
   color: white;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+#author-name {
+  display: flex;
+  justify-content: center;
+}
+#author-name img {
+  height: fit-content;
+  padding: 10px 20px 10px 20px;
+}
+.date-author {
+  display: flex;
+  gap: 30px;
+  margin-block: 30px;
+  justify-content: center;
+  font-size: 25px;
+}
+.date img {
+  height: 30px;
 }
 .blogheading h3 {
   padding-inline: 30px;
+  display: flex;
+  justify-content: center;
 }
 .shareButtons {
-  /* width: 50%; */
   display: flex;
   justify-content: center;
   gap: 30px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 40px;
 }
 #facebookShare {
@@ -72,13 +93,14 @@
   bottom: 10px;
   left: 2px;
   background-color: rgba(74, 69, 69, 1);
+  padding-inline: 6px;
+  padding-block: 4px;
 }
 .pageContent {
   display: flex;
   padding-inline: 10px;
   background-color: rgba(74, 69, 69, 1);
   gap: 20px;
-  width: 100%;
 }
 
 .blog-page {
@@ -88,6 +110,7 @@
 .newBlog {
   border: 2px white solid;
   height: fit-content;
+  padding-inline: 20px;
 }
 .main-blog-content {
   display: flex;
@@ -95,7 +118,7 @@
   color: white;
   gap: 15px;
   margin-top: 20px;
-  width: 60%;
+  width: 70%;
 }
 .blog-content1 img {
   width: 100%;
@@ -108,23 +131,29 @@
   width: 80%;
 }
 
+#motivationalImage {
+  display: flex;
+  justify-content: center;
+}
 #motivationalImage img {
   width: 50%;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .rightside {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
 }
 #searchbar {
   display: flex;
-  margin: 20px 0 20px 0;
+  margin: 20px 5px 20px 5px;
 }
 #search {
   background-color: gray;
   padding: 10px;
-  width: 60%;
+  width: 50%;
   border: 0;
   color: white;
 }
@@ -139,7 +168,10 @@
 
 .iconsblog {
   display: flex;
-  gap: 0;
+
+  height: 70px;
+  margin: 20px;
+  gap: 15px;
 }
 .iconsblog button {
   background-color: transparent;
@@ -148,8 +180,6 @@
 .iconsblog button img {
   height: 50px;
   cursor: pointer;
-  padding-top: 50px;
-  padding-inline: 10px;
 }
 .popul-Tag {
   display: flex;
@@ -164,6 +194,8 @@
   color: white;
   font-size: 15px;
   font-weight: 400;
+  padding-inline: 6px;
+  margin: 5px;
 }
 .title-post {
   border: 1px solid white;
@@ -174,16 +206,18 @@
 .changePost {
   display: flex;
   border: 1px solid white;
-  height: 5%;
   align-items: center;
   gap: 5%;
   padding-inline: 15px;
+  margin-block: 15px;
 }
 .prev-Img img {
   width: 100px;
+  padding-top: 5px;
 }
 .next-Img img {
   width: 100px;
+  padding-top: 5px;
 }
 #prev-post {
   width: 50%;
@@ -213,6 +247,23 @@
   color: white;
   text-decoration: none;
 }
+.date {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 990px) {
+  .title-post-next {
+    font-size: 12px;
+  }
+  .title-blog-prev {
+    font-size: 12px;
+    padding-block: 10px;
+  }
+  .popul-Tag {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .iconsblog {
     flex-direction: column;
@@ -220,13 +271,27 @@
   .iconsblog button img {
     height: 30px;
   }
+  .changePost {
+    font-size: 15px;
+  }
+  #next-post {
+    flex-direction: column;
+  }
+  #prev-post {
+    flex-direction: column;
+  }
 }
 @media (max-width: 660px) {
+  #motivationalImage {
+    display: flex;
+    justify-content: center;
+  }
   .pageContent {
     flex-direction: column;
   }
   .main-blog-content {
-    width: 90%;
+    width: 100%;
+    gap: 0;
   }
   .blogheading h3 {
     font-size: 20px;
@@ -242,9 +307,10 @@
     margin-top: 5px;
   }
   .shareButtons {
-    height: 20px;
-    flex-direction: column;
+    /* height: 20px; */
+    /* flex-direction: column; */
     gap: 10px;
+    margin-inline: 5px;
   }
   #facebookShare img {
     height: 20px;
@@ -256,5 +322,46 @@
   }
   .blogcontent {
     font-size: 10px;
+  }
+  .popularblogs {
+    flex-direction: column;
+  }
+  .rightside {
+    width: 100%;
+  }
+  .iconsblog {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .popul-Tag {
+    justify-content: center;
+  }
+
+  .Tags h1 {
+    margin-bottom: 20px;
+  }
+  .changePost {
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px) {
+  .date-author {
+    flex-direction: column;
+    gap: 2px;
+  }
+  #author-name img {
+    padding: 2px 5px 2px 5px;
+  }
+  .shareButtons {
+    justify-content: center;
+  }
+  #facebookShare {
+    width: 50%;
+    justify-content: center;
+  }
+  #twitterShare {
+    width: 50%;
+    justify-content: center;
   }
 }

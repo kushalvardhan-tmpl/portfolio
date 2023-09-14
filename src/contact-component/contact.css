@@ -97,7 +97,7 @@
   padding: 10px 30px 10px 30px;
 }
 .Sendbutton :hover {
-  background-color: rgb(104, 7, 7);
+  background-color: #0056b3;
 }
 @media (max-width: 670px) {
   .form form {

@@ -1,10 +1,20 @@
 .footer {
   color: white;
   background-color: rgb(49, 44, 44);
-  font-size: 14px;
+  font-size: 15px;
 }
 .footer-blog p {
   margin-block: 10px;
+  width: 60%;
+  font-weight: 400;
+}
+.footer-blog {
+  margin-block: 20px;
+  padding-left: 2rem;
+}
+.footer-blog h3 {
+  font-size: 25px;
+  font-weight: 700;
 }
 .footerabout {
   display: flex;
@@ -13,16 +23,31 @@
 .links {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 .links a {
   text-decoration: none;
-  color: rgb(100, 105, 239);
+  color: rgb(249, 249, 252);
 }
 #end p {
   display: flex;
   justify-content: center;
 }
+#end {
+  padding: 20px;
+}
+.others {
+  width: 30%;
+  margin-block: 20px;
+}
+.others h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
 @media (max-width: 500px) {
+  .footer-blog p {
+    width: 100%;
+  }
   #end p {
     font-size: 15px;
     text-align: center;
@@ -32,6 +57,14 @@
     flex-direction: column;
   }
   .others {
-    padding: 5px;
+    padding-left: 2rem;
+    width: 80%;
+  }
+  .others h3 {
+    font-weight: 400;
+  }
+  .links {
+    flex-direction: row;
+    gap: 5%;
   }
 }
