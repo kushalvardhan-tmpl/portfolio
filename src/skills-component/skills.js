@@ -8,11 +8,8 @@ const Skills = () => {
           <h1 id="skillhead">My Skills</h1>
           <div className="mySkillContent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut
-              soluta, hic sed ad nulla eius tenetur a ut expedita, nobis
-              similique ab facilis magnam nihil illo veritatis consectetur
-              provident. Vero, iste. Minus reiciendis dolore nulla molestias
-              omnis pariatur repellendus?
+              "I am proficient in HTML, CSS and javascript. I also have some
+              amount of experience in PHP and wordpress."
             </p>
             <div className="skillList">
               <ul>

@@ -197,7 +197,15 @@
   width: fit-content;
   padding: 1px;
 }
-
+.next-Img img {
+  width: 100%;
+}
+.next-Img a img {
+  width: 100%;
+}
+.prev-Img img {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .iconsblog {
     flex-direction: column;

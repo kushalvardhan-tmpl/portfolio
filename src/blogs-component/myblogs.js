@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./myblogs.css";
 import { Link } from "react-router-dom";
+// import Loader from "../myComponents/loader";
 
 const API =
   "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1";
 const MyBlogs = () => {
   const [users, setUsers] = useState([]);
-  // const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(true);
   const fetchBlogs = async (url) => {
     // setLoading(true);
     try {
@@ -32,8 +33,8 @@ const MyBlogs = () => {
       <div id="head-blog">
         <h3>My blogs</h3>
       </div>
+      {/* <Loader /> */}
       <div className="blog-main-container">
-        {/* {loading ? <div></div> : <div> </div>} */}
         {users?.blogs?.map((blog) => (
           <div key={blog.id} className="blog-Cont-main">
             <div className="blog-posts">

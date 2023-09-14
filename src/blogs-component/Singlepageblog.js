@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Header from "../myComponents/header";
 import "./Singlepageblog.css";
 import Footer from "../myComponents/footer";
-import { Comment } from "../comment-component/comment";
+import Comment from "../comment-component/comment";
 
 import PopularCategory from "./popularpost";
 import PopularTags from "./populartags";
@@ -63,13 +63,27 @@ const SinglePage = () => {
             </div>
             <div className="changePost">
               {users?.prevPost !== null && (
-                <Link to={`/Singlepageblog/${users?.prevPost?.id}`}>
-                  <img src={"/assets/left.png"} alt="previous" /> Prev Post
-                </Link>
+                <>
+                  <Link to={`/Singlepageblog/${users?.prevPost?.id}`}>
+                    <img src={"/assets/left.png"} alt="previous" /> Prev Post
+                  </Link>
+                  <div className="prev-Img">
+                    {" "}
+                    <img src={users?.prevPost?.image} />
+                  </div>
+                </>
               )}
-              <Link to={`/Singlepageblog/${users?.nextPost?.id}`}>
-                Next Post <img src={"/assets/right.png"} alt="next" />
-              </Link>
+              {users?.nextPost !== null && (
+                <>
+                  <div className="next-Img">
+                    <img src={users?.nextPost?.image} />
+                  </div>
+                  <Link to={`/Singlepageblog/${users?.nextPost?.id}`}>
+                    Next Post
+                    <img src={"/assets/right.png"} alt="next" />
+                  </Link>
+                </>
+              )}
             </div>
             <Comment />
           </div>
@@ -80,7 +94,7 @@ const SinglePage = () => {
             </div>
             <div className="popularblogs">
               {users?.blogs?.map((blog) => (
-                <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}></Link>
+                <Link to={`/Singlepageblog/${blog?.id}`} key={blog?.id}></Link>
               ))}
               <PopularCategory />
             </div>

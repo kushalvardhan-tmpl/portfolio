@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import "./myblogs.css";
 import "./Singlepageblog.css";
 import PopularCategory from "./popularpost";
+import PopularTags from "./populartags";
 
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
 };
-const popular =
-  "https://portfolio-website-lkvm.onrender.com/api/blogs/popular-posts";
+
 const API =
   "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1";
 
@@ -33,8 +33,6 @@ const MyBlogs = () => {
     fetchBlogs(API);
   }, []);
 
-  console.log(users);
-
   return (
     <>
       <Header />
@@ -42,7 +40,7 @@ const MyBlogs = () => {
       <div className="blogpage-single">
         <div className="blogheadingcontainer">
           <div className="blogheading">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3>{users?.blog?.title}</h3>
             <div className="shareButtons">
               <button id="facebookShare">
                 <Link to="https://www.facebook.com/your-page-url">
@@ -64,9 +62,11 @@ const MyBlogs = () => {
             <div id="head-blog">
               <h3>My blogs</h3>
             </div>
+            <div className="blog-category"></div>
             <div className="blog-main-container">
               {users?.blogs?.map((blog) => (
                 <div key={blog.id} className="blog-Cont-main">
+                  <div className="blog-categories"></div>
                   <div className="blog-posts">
                     <Link to={`/Singlepageblog/${blog.id}`}>
                       <div className="blog-Image">
@@ -93,19 +93,20 @@ const MyBlogs = () => {
               <input type="search" name="" id="search" />
               <button>search</button>
             </div>
+            <div className="blog-search"></div>
             <div className="popularblogs">
               {users?.blogs?.map((blog) => (
-                <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}>
-                  <PopularCategory />
-                </Link>
+                <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}></Link>
               ))}
+              <PopularCategory />
             </div>
             <div className="populartags">
-              <h5>Tags</h5>
+              <h5>
+                {" "}
+                <PopularTags />
+              </h5>
             </div>
-            <div className="popularCategory">
-              <h5>Categories</h5>
-            </div>
+
             <div className="iconsblog">
               <button
                 onClick={() =>

@@ -23,8 +23,8 @@ const PopularCategory = () => {
       <div className="popul-post">
         {popularPosts.slice(0, 3).map((post) => (
           <>
-            <Link to={`/Singlepageblog/${post.id}`} id="posts" key={post.id}>
-              <div className="title-post"> {post.title}</div>
+            <Link to={`/Singlepageblog/${post?.id}`} id="posts" key={post?.id}>
+              <div className="title-post"> {post?.title}</div>
               <div className="image-Popular">
                 <img src={post.image} />
               </div>

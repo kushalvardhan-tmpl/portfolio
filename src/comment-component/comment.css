@@ -78,6 +78,31 @@
   display: flex;
   justify-content: center;
 }
+
+.comment-status {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  background-color: #9a0d0d;
+  color: #f6f6f6;
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #674e4e;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.comment-status.success {
+  background-color: #0dbb36;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.comment-status.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
 @media (max-width: 1024px) {
   .comments {
     width: 100%;

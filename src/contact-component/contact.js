@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
+
 function Contact() {
   const [formdata, setformdata] = useState({
     fname: "",
@@ -7,6 +8,7 @@ function Contact() {
     email: "",
     message: "",
   });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setformdata({
@@ -15,10 +17,12 @@ function Contact() {
     });
   };
 
-  console.log(formdata);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
 
     try {
       const response = await fetch(
@@ -41,13 +45,34 @@ function Contact() {
           email: "",
           message: "",
         });
+        alert("Form data sent successfully");
       } else {
         console.error("Failed to send form data");
+        alert("Failed to send form data");
       }
     } catch (error) {
       console.error("Error:", error);
+      alert("Error: " + error.message);
     }
   };
+
+  const validateForm = () => {
+    const { fname, lname, email, message } = formdata;
+
+    if (!fname || !lname || !email || !message) {
+      alert("All fields are required");
+      return false;
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(email)) {
+      alert("Invalid email format");
+      return false;
+    }
+
+    return true;
+  };
+
   return (
     <>
       <div className="inputForm">
