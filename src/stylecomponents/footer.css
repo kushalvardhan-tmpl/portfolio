@@ -16,7 +16,7 @@
 }
 .links a {
   text-decoration: none;
-  color: rgb(86, 210, 144);
+  color: rgb(100, 105, 239);
 }
 #end p {
   display: flex;
@@ -24,8 +24,14 @@
 }
 @media (max-width: 500px) {
   #end p {
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
-    color: chartreuse;
+    color: rgb(42, 210, 16);
+  }
+  .footerabout {
+    flex-direction: column;
+  }
+  .others {
+    padding: 5px;
   }
 }

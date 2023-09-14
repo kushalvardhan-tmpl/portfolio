@@ -62,28 +62,37 @@ const SinglePage = () => {
               />
             </div>
             <div className="changePost">
-              {users?.prevPost !== null && (
-                <>
-                  <Link to={`/Singlepageblog/${users?.prevPost?.id}`}>
-                    <img src={"/assets/left.png"} alt="previous" /> Prev Post
-                  </Link>
-                  <div className="prev-Img">
-                    {" "}
-                    <img src={users?.prevPost?.image} />
-                  </div>
-                </>
-              )}
-              {users?.nextPost !== null && (
-                <>
-                  <div className="next-Img">
-                    <img src={users?.nextPost?.image} />
-                  </div>
-                  <Link to={`/Singlepageblog/${users?.nextPost?.id}`}>
-                    Next Post
-                    <img src={"/assets/right.png"} alt="next" />
-                  </Link>
-                </>
-              )}
+              <div id="prev-post">
+                {users?.prevPost !== null && (
+                  <>
+                    <Link to={`/Singlepageblog/${users?.prevPost?.id}`}>
+                      <img src={"/assets/left.png"} alt="previous" />{" "}
+                    </Link>
+                    <div className="title-blog-prev">
+                      {users?.prevPost?.title}{" "}
+                    </div>
+                    <div className="prev-Img">
+                      {" "}
+                      <img src={users?.prevPost?.image} />
+                    </div>{" "}
+                  </>
+                )}
+              </div>
+              <div id="next-post">
+                {users?.nextPost !== null && (
+                  <>
+                    <div className="next-Img">
+                      <img src={users?.nextPost?.image} />
+                    </div>
+                    <div className="title-post-next">
+                      {users?.nextPost?.title}{" "}
+                    </div>
+                    <Link to={`/Singlepageblog/${users?.nextPost?.id}`}>
+                      <img src={"/assets/right.png"} alt="next" />
+                    </Link>
+                  </>
+                )}
+              </div>
             </div>
             <Comment />
           </div>

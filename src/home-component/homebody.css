@@ -43,3 +43,16 @@
     font-size: large;
   }
 }
+@media (max-width: 570px) {
+  .headings h1 {
+    font-size: 20px;
+  }
+  .headings h3 {
+    font-size: 15px;
+  }
+
+  #profilebutton a {
+    padding: 3px 5px 3px 5px;
+    font-size: 14px;
+  }
+}

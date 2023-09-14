@@ -90,7 +90,25 @@
 .Loadmore a :hover {
   background-color: rgb(104, 7, 7);
 }
-
+.myBlog-head {
+  display: flex;
+  height: 50vh;
+  background-image: url("../../public/assets/banner-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  font-family: poppins;
+  font-size: 45px;
+  position: relative;
+  border: 0;
+  justify-content: center;
+}
+.myBlog-h h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 768px) {
   .blog-Cont-main {
     width: 100%;
@@ -110,5 +128,10 @@
     padding: 5px 10px 5px 10px;
     border-radius: 20px;
     margin: 20px;
+  }
+}
+@media (max-width: 520px) {
+  #head-blog h3 {
+    font-size: 30px;
   }
 }
