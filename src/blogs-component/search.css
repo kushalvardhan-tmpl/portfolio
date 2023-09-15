@@ -84,4 +84,8 @@
   border: 1px white solid;
   padding: 5px 10px 5px 10px;
   margin: 20px 5px 20px 5px;
+  cursor: pointer;
+}
+.hide-results-button :hover {
+  background-color: #0056b3;
 }
