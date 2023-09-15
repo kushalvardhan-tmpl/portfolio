@@ -15,18 +15,20 @@
 }
 .cont {
   display: flex;
+  padding-inline: 8%;
+  gap: 5%;
 }
 #skillhead {
   display: flex;
   justify-content: center;
-  padding: 20px 0px 30px 0px;
+  padding: 30px 0px 30px 0px;
   font-size: 45px;
   font-weight: 700;
 }
 
 .mySkillContent {
   display: flex;
-  padding-inline: 10%;
+  /* padding-inline: 10%; */
   flex-direction: column;
   gap: 20%;
 }
@@ -39,8 +41,8 @@
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  margin-right: 30px;
-  margin-bottom: 20px;
+  /* margin-right: 30px; */
+  margin-bottom: 30px;
 }
 
 .skillList ul {
@@ -55,61 +57,60 @@
 
 #percentage-bar1 {
   width: 100%;
-  height: 5px;
+  height: 10px;
   text-align: right;
   background: linear-gradient(90deg, #29a9e8 95%, #f5f5f5 50%);
   border-radius: 4px;
   line-height: 20px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #percentage-bar2 {
   width: 100%;
-  height: 5px;
+  height: 10px;
   background: linear-gradient(90deg, #29a9e8 75%, #ffffff 50%);
   border-radius: 4px;
   text-align: center;
   line-height: 20px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #percentage-bar3 {
   width: 100%;
-  height: 5px;
+  height: 10px;
   background: linear-gradient(90deg, #29a9e8 80%, #ffffff 20%);
   border-radius: 4px;
   text-align: center;
   line-height: 20px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #percentage-bar4 {
   width: 100%;
-  height: 5px;
+  height: 10px;
   background: linear-gradient(90deg, #29a9e8 95%, #ffffff 5%);
   border-radius: 4px;
   text-align: center;
   line-height: 20px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #percentage-bar5 {
   width: 100%;
-  height: 5px;
+  height: 10px;
   background: linear-gradient(90deg, #29a9e8 50%, #ffffff 50%);
   border-radius: 4px;
   text-align: center;
   line-height: 20px;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .downloadCv {
-  justify-content: center;
   display: flex;
 }
 

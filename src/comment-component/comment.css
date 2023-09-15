@@ -108,36 +108,6 @@
   border-color: #f5c6cb;
   color: #721c24;
 }
-.google-map-code {
-  background-color: rgba(74, 69, 69, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-}
-.google-map-code iframe {
-  margin-block: 10%;
-  border-radius: 20px;
-  padding-inline: 50px;
-}
-.maps-head {
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 30px;
-  border: 2px solid white;
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(74, 69, 69, 1);
-}
-#maps {
-  position: relative;
-  top: 25px;
-
-  border: 2px solid white;
-  padding: 20px;
-  z-index: 1;
-}
 
 @media (max-width: 1024px) {
   .comments {

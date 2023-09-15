@@ -5,7 +5,7 @@
 .headingcontainer {
   border: 0;
   display: flex;
-  height: 50vh;
+  height: 80vh;
   background-image: url("../../public/assets/banner-1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,6 +24,7 @@
 .headings h3 {
   font-size: 30px;
   font-weight: 700;
+  margin-block: 25px;
 }
 #profilebutton {
   margin-top: 20px;
@@ -34,9 +35,12 @@
   color: white;
   border: 1px white solid;
   border-radius: 30px;
-  padding: 5px 15px;
+  padding: 10px 20px 10px 20px;
   cursor: pointer;
   font-size: 29px;
+}
+#profilebutton a:hover {
+  background-color: #0056b3;
 }
 
 @media (max-width: 968px) {

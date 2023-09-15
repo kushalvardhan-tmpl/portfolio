@@ -8,13 +8,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 70px;
+  height: 80px;
   width: 100%;
 }
 #buttons {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
+  font-size: 25px;
 }
 
 #buttons a {
@@ -30,17 +31,20 @@
   padding-bottom: 5px;
   padding-left: 2em;
   padding-right: 2em;
-  margin-right: 2em;
-  margin-left: 2em;
+  margin-right: 4em;
+  margin-left: 4em;
   transform: skewX(-30deg);
 }
 #hireme button {
+  font-size: 25px;
   background-color: transparent;
   color: white;
   border: 0em;
   font-family: poppins;
   transform: skewx(30deg);
+  cursor: pointer;
 }
+
 @media (max-width: 968px) {
   .headbuttons {
     justify-content: center;
@@ -73,18 +77,18 @@
 }
 #homebtn a.active {
   padding-inline: 8px !important;
-  background-color: red;
+  color: red;
 }
 /* #aboutbtn a.active {
   background-color: red !important;
   padding-inline: 8px !important; */
 /* } */
 #contactbtn a.active {
-  background-color: red;
+  color: red;
   padding-inline: 8px !important;
 }
 #blogs-btn a.active {
-  background-color: red;
+  color: red;
   padding-inline: 8px !important;
 }
 #hirebtn a.active {

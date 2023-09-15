@@ -5,10 +5,11 @@
 .blog-main-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: rgba(74, 69, 69, 1);
   color: white;
-  /* padding-inline: 3rem; */
+  padding-inline: 5rem;
+  gap: 10px;
 }
 .blog-posts a {
   color: white;
@@ -23,6 +24,7 @@
   overflow: hidden;
   cursor: pointer;
   border: 2px solid rgb(70, 63, 63);
+  background-color: #5a5555;
 }
 .blog-main-container :hover {
   background-color: black;
