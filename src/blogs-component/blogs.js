@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "../myComponents/header";
+import SearchResults from "./search";
 import Footer from "../myComponents/footer";
 import moment from "moment";
 import { Link } from "react-router-dom";
@@ -75,11 +76,7 @@ const MyBlogs = () => {
             </div>
           </div>
           <div className="rightside">
-            <div id="searchbar">
-              <input type="search" name="" id="search" />
-              <button>search</button>
-            </div>
-            <div className="blog-search"></div>
+            <SearchResults />
             <div className="popularblogs">
               {users?.blogs?.map((blog) => (
                 <Link to={`/Singlepageblog/${blog.id}`} key={blog.id}></Link>

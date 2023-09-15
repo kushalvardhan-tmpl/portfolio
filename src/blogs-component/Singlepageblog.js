@@ -5,7 +5,7 @@ import "./Singlepageblog.css";
 import Footer from "../myComponents/footer";
 import Comment from "../comment-component/comment";
 import moment from "moment";
-
+import Loader from "../myComponents/loader";
 import PopularCategory from "./popularpost";
 import PopularTags from "./populartags";
 import SearchResults from "./search";
@@ -15,6 +15,7 @@ const openInNewTab = (url) => {
 
 const SinglePage = () => {
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { blogId } = useParams();
 
   const API = `https://portfolio-website-lkvm.onrender.com/api/blogs/${blogId}`;
@@ -29,8 +30,8 @@ const SinglePage = () => {
     } catch (err) {
       console.error(err);
     }
+    setLoading(false);
   };
-
   useEffect(() => {
     fetchBlogs(API);
   }, [blogId]);
@@ -71,13 +72,20 @@ const SinglePage = () => {
         </div>
         <div className="pageContent">
           <div className="main-blog-content">
-            <div className="newBlog">
-              <div className="page-heading">{users?.blog?.Category?.value}</div>
-              <div
-                className="blog-content1"
-                dangerouslySetInnerHTML={{ __html: users?.blog?.content }}
-              />
-            </div>
+            {loading ? (
+              <Loader />
+            ) : (
+              <div className="newBlog">
+                <div className="page-heading">
+                  {users?.blog?.Category?.value}
+                </div>
+
+                <div
+                  className="blog-content1"
+                  dangerouslySetInnerHTML={{ __html: users?.blog?.content }}
+                />
+              </div>
+            )}
             <div className="changePost">
               <div id="prev-post">
                 {users?.prevPost !== null && (
