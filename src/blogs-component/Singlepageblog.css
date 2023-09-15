@@ -140,7 +140,7 @@
 }
 #motivationalImage img {
   width: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-left: 20px;
 }
 
@@ -356,5 +356,8 @@
   #motivationalImage img {
     padding: 0;
     margin-inline: 0;
+  }
+  .pageContent {
+    padding-inline: 5px;
   }
 }

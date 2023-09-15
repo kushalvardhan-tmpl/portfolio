@@ -8,7 +8,7 @@
   justify-content: space-between;
   background-color: rgba(74, 69, 69, 1);
   color: white;
-  padding-inline: 3rem;
+  /* padding-inline: 3rem; */
 }
 .blog-posts a {
   color: white;
@@ -116,6 +116,9 @@
   -webkit-box-orient: vertical !important;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.Tags {
+  margin: 20px;
 }
 @media (max-width: 768px) {
   .blog-Cont-main {
