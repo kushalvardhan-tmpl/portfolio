@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import "./search.css";
 
 const SearchResults = () => {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
   const [showNoResultsMessage, setShowNoResultsMessage] = useState(false);
+
+  console.log(searchQuery, "searchQuery");
 
   const handleSearch = () => {
     fetch(
@@ -38,7 +40,11 @@ const SearchResults = () => {
         className="search-input"
       />
       <div className="search-button">
-        <button onClick={handleSearch} id="btn-search">
+        <button
+          disabled={searchQuery === null}
+          onClick={handleSearch}
+          id="btn-search"
+        >
           Search
         </button>
       </div>

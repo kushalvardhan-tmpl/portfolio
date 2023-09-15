@@ -49,8 +49,8 @@
   color: white;
   border: 1px white solid;
   font-size: 25px;
-  border-radius: 20px;
-  padding: 5px;
+  border-radius: 50px;
+  padding: 5px 20px 5px 20px;
   margin: 10px;
   font-weight: 800;
   cursor: pointer;

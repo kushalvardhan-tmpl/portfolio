@@ -4,6 +4,9 @@
   align-items: center;
   padding: 20px;
 }
+.search-bar-container ::placeholder {
+  color: white;
+}
 .search-results {
   color: white;
 }
@@ -30,16 +33,22 @@
   
   cursor: pointer;
   transition: background-color 0.3s ease;}
-}*/
+} */
 .search-button button {
   border: 1px solid white;
   background-color: maroon;
   padding: 5px 10px 5px 10px;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 .search-button:hover {
   background-color: #0056b3;
+}
+
+.search-button button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
 }
 
 .search-results {

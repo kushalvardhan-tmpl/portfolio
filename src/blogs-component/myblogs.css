@@ -26,7 +26,7 @@
 }
 .blog-main-container :hover {
   background-color: black;
-  color: white;
+
   text-decoration: none;
 }
 
@@ -128,6 +128,9 @@
     justify-content: center;
     background-color: rgba(74, 69, 69, 1);
   }
+  .blog-main-container {
+    padding-inline: 0;
+  }
 
   .Loadmore a button {
     color: white;
@@ -144,5 +147,8 @@
   }
   .blog-main-container {
     padding-inline: 1rem;
+  }
+  .pageContent {
+    padding-inline: 5px;
   }
 }

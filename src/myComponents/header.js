@@ -24,7 +24,7 @@ const Header = () => {
           </nav>
           <nav id="blogs-btn">
             <NavLink to="/blogs">
-              <b>blogs</b>
+              <b>Blogs</b>
             </NavLink>
           </nav>
         </div>
