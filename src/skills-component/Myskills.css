@@ -13,7 +13,9 @@
   font-size: 25px;
   color: white;
 }
-
+.cont {
+  display: flex;
+}
 #skillhead {
   display: flex;
   justify-content: center;
@@ -25,6 +27,7 @@
 .mySkillContent {
   display: flex;
   padding-inline: 10%;
+  flex-direction: column;
   gap: 20%;
 }
 .mySkillContent p {
@@ -36,6 +39,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
+  margin-right: 20px;
 }
 
 .skillList ul {

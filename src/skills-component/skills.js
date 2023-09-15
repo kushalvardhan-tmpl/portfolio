@@ -7,11 +7,15 @@ const Skills = () => {
       <>
         <div className="skillContainer">
           <h1 id="skillhead">My Skills</h1>
-          <div className="mySkillContent">
-            <p>
-              "I am proficient in HTML, CSS and javascript. I also have some
-              amount of experience in PHP and wordpress."
-            </p>
+          <div className="cont">
+            <div className="mySkillContent">
+              <p>
+                "I am proficient in HTML, CSS and javascript. I also have some
+                amount of experience in PHP and wordpress."
+              </p>
+              <DownloadButton />
+            </div>
+
             <div className="skillList">
               <ul>
                 HTML & CSS
@@ -40,8 +44,6 @@ const Skills = () => {
               <div id="percentage-bar5"></div>
             </div>
           </div>
-
-          <DownloadButton />
         </div>
       </>
     </div>

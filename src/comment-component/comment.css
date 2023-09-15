@@ -149,7 +149,7 @@
     gap: 5px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .details {
     gap: 5px;
   }
@@ -164,5 +164,13 @@
   }
   #textcomment {
     padding: 5px;
+  }
+  .comments {
+    width: 100%;
+  }
+}
+@media (max-width: 290px) {
+  .comments {
+    width: 50%;
   }
 }
