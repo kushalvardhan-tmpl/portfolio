@@ -123,7 +123,7 @@ function Contact() {
               <textarea
                 id="message"
                 name="message"
-                rows="10"
+                rows="15"
                 value={formdata.message}
                 onChange={handleChange}
                 required
