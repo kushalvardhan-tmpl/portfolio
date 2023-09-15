@@ -25,10 +25,11 @@
 #author-name {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #author-name img {
   height: fit-content;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 10px 5px 10px;
 }
 .date-author {
   display: flex;
@@ -58,7 +59,7 @@
   color: white;
   background-color: transparent;
   gap: 10px;
-  padding-right: 10px;
+  padding: 5px;
   border: 1px white solid;
 }
 #facebookShare img {
@@ -70,18 +71,20 @@
   color: white;
   background-color: transparent;
   gap: 10px;
-  padding-right: 10px;
+  padding: 5px;
   border: 1px white solid;
 }
 #twitterShare a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+  display: flex;
 }
 #facebookShare a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+  display: flex;
 }
 #twitterShare img {
   height: 30px;
@@ -218,6 +221,7 @@
   text-decoration: none;
   color: white;
 }
+
 #next-post {
   width: 50%;
   display: flex;
@@ -344,5 +348,13 @@
   #twitterShare {
     width: 50%;
     justify-content: center;
+  }
+  .popul-Tag {
+    display: flex;
+    flex-direction: row;
+  }
+  #motivationalImage img {
+    padding: 0;
+    margin-inline: 0;
   }
 }

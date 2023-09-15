@@ -36,13 +36,13 @@ const About = () => {
         <h1 id="head">About me</h1>
         <div className="aboutContainer">
           <div className="profilepic">
-            <img src={"/assets/profile-pic.png"} alt="Pic" />
+            <img src={apiData?.profilePic} alt="Pic" />
           </div>
           {loading ? (
             <Loader />
           ) : (
             <div className="aboutme">
-              <h1>Saikat Mondal</h1>
+              <h1>{apiData?.firstName + " " + apiData?.lastName}</h1>
               <p>{apiData ? apiData.description : "Loading..."}</p>
               <Link to="/contactPage">
                 <button id="btn">Contact me</button>

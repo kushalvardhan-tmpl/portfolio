@@ -67,13 +67,17 @@
   background-color: rgb(206, 191, 191);
   border: 0px;
   color: white;
+  padding: 5px;
 }
 .Commentbutton button {
   color: white;
   background-color: transparent;
   border: 1px white solid;
-  padding: 2px 5px 2px 5px;
+
   cursor: pointer;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border-radius: 20px;
 }
 .Commentbutton {
   display: flex;

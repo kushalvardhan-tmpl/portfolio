@@ -72,16 +72,18 @@ function CategoryCards() {
       </div>
       <div className="category-cards">
         {categoryProjects.map((project) => (
-          <div key={project.id} className="category-card">
+          <div className="category-card">
+            {/* key= */}
+            {project.id}
             <h3>{project.projectName}</h3>
-            <div className="projectitle">{project.name}</div>
             <div className="image-project">
+              <div className="projectitle">{project.name}</div>
               <img src={project.image} />
-            </div>
-            <div className="view-button">
-              <Link to={project.link}>
-                <button>View Project</button>
-              </Link>
+              <div className="view-button">
+                <Link to={project.link}>
+                  <button>View Project</button>
+                </Link>
+              </div>
             </div>
           </div>
         ))}
