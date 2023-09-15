@@ -2,17 +2,18 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./category.css";
 import { Link } from "react-router-dom";
-
+import Loader from "../myComponents/loader";
 const apiUrlCategories =
   "https://portfolio-website-lkvm.onrender.com/api/home/project-categories";
 
 function CategoryCards() {
+  const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [categoryProjects, setCategoryProjects] = useState([]);
 
-  console.log(selectedCategory, "selectedCategory");
-  console.log(categories, "categories");
+  // console.log(selectedCategory, "selectedCategory");
+  // console.log(categories, "categories");
 
   useEffect(() => {
     axios
@@ -23,6 +24,7 @@ function CategoryCards() {
       .catch((error) => {
         console.error("Error fetching categories: ", error);
       });
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -46,6 +48,7 @@ function CategoryCards() {
         .catch((error) => {
           console.error("Error fetching projects: ", error);
         });
+      setLoading(false);
     }
   }, [selectedCategory]);
 
@@ -73,8 +76,7 @@ function CategoryCards() {
       <div className="category-cards">
         {categoryProjects.map((project) => (
           <div className="category-card">
-            {/* key= */}
-            {project.id}
+            {/* key={project.id} */}
             <h3>{project.projectName}</h3>
             <div className="image-project">
               <div className="projectitle">{project.name}</div>

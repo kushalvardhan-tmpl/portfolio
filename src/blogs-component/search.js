@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./search.css";
@@ -5,9 +7,8 @@ import "./search.css";
 const SearchResults = () => {
   const [searchQuery, setSearchQuery] = useState(null);
   const [searchResults, setSearchResults] = useState([]);
+  const [showResults, setShowResults] = useState(false);
   const [showNoResultsMessage, setShowNoResultsMessage] = useState(false);
-
-  console.log(searchQuery, "searchQuery");
 
   const handleSearch = () => {
     fetch(
@@ -16,9 +17,9 @@ const SearchResults = () => {
       .then((response) => response.json())
       .then((data) => {
         setSearchResults(data);
+        setShowResults(true);
         if (data.length === 0) {
           setShowNoResultsMessage(true);
-
           setTimeout(() => {
             setShowNoResultsMessage(false);
           }, 3000);
@@ -29,12 +30,16 @@ const SearchResults = () => {
       });
   };
 
+  const handleHideResults = () => {
+    setShowResults(false);
+  };
+
   return (
     <div className="search-bar-container">
       <input
         id="search"
         type="text"
-        placeholder="Enter search query"
+        placeholder="Search for Blogs"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="search-input"
@@ -48,31 +53,40 @@ const SearchResults = () => {
           Search
         </button>
       </div>
-      {searchResults.length > 0 ? (
-        <div className="search-results">
-          <h2>Search Results:</h2>
-          <ul>
-            {searchResults.map((result, index) => (
-              <li key={index}>
-                <Link
-                  to={`/SinglePageblog/${result.id}`}
-                  className="search-result-link"
-                >
-                  <div className="searchTitle">{result.title}</div>
-                  <div className="searchImage">
-                    <img src={result.image} alt={result.title} />
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+      {/* Display search results container */}
+      {showResults && (
+        <div className="search-results-container">
+          <button onClick={handleHideResults} className="hide-results-button">
+            Hide Results
+          </button>
+          {searchResults.length > 0 ? (
+            <div className="search-results">
+              <h2>Search Results:</h2>
+              <ul>
+                {searchResults.map((result, index) => (
+                  <li key={index}>
+                    <Link
+                      to={`/SinglePageblog/${result.id}`}
+                      className="search-result-link"
+                    >
+                      <div className="searchTitle">{result.title}</div>
+                      <div className="searchImage">
+                        <img src={result.image} alt={result.title} />
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            showNoResultsMessage && (
+              <div className="no-results-message">
+                <p>No results found.</p>
+              </div>
+            )
+          )}
         </div>
-      ) : (
-        showNoResultsMessage && (
-          <div className="no-results-message">
-            <p>No results found.</p>
-          </div>
-        )
       )}
     </div>
   );

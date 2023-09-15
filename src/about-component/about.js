@@ -34,13 +34,14 @@ const About = () => {
     <>
       <div className="Container">
         <h1 id="head">About me</h1>
-        <div className="aboutContainer">
-          <div className="profilepic">
-            <img src={apiData?.profilePic} alt="Pic" />
-          </div>
-          {loading ? (
-            <Loader />
-          ) : (
+        {loading ? (
+          <Loader />
+        ) : (
+          <div className="aboutContainer">
+            <div className="profilepic">
+              <img src={apiData?.profilePic} alt="Pic" />
+            </div>
+
             <div className="aboutme">
               <h1>{apiData?.firstName + " " + apiData?.lastName}</h1>
               <p>{apiData ? apiData.description : "Loading..."}</p>
@@ -70,8 +71,8 @@ const About = () => {
                 </button>
               </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </>
   );
