@@ -1,0 +1,14 @@
+.page-tags {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+  margin-bottom: 70px;
+  border-top: 0px;
+  border-bottom: 1px solid white;
+  border-inline: 1px solid white;
+  padding-inline: 10px;
+}
+.pageTag {
+  display: flex;
+  gap: 20px;
+}

@@ -36,12 +36,14 @@
   gap: 20px;
   justify-content: center;
   font-size: large;
-  margin: 10px 0px 20px 0px;
+  /* margin: 10px 0px 20px 0px; */
+  /* margin-bottom: 20px; */
 }
 #firstname {
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 #fname {
   border-radius: 10px;
@@ -59,17 +61,20 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 #mail {
   display: flex;
   flex-direction: column;
   margin-block: 20px;
+  font-weight: 700;
 }
 #textmsg {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 15px 0px 10px 0px;
+  font-weight: 700;
 }
 
 #email {
@@ -97,7 +102,7 @@
   cursor: pointer;
   background-color: transparent;
   border: 1px white solid;
-  border-radius: 25px;
+  border-radius: 30px;
   color: white;
   padding: 10px 30px 10px 30px;
 }

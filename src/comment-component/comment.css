@@ -13,40 +13,47 @@
   border: 2px solid white;
   padding: 10px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .comments h3 {
   padding-bottom: 20px;
+  font-size: 29px;
 }
 .commentForm {
   display: flex;
   justify-content: center;
 }
+.commentForm form {
+  width: 95%;
+}
 
 .details {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
   padding-bottom: 20px;
 }
 #Name {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 #pMail {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 #name {
   border: 0;
   padding: 10px;
-  background-color: rgb(206, 191, 191);
+  background-color: rgb(234 228 228);
   color: white;
 }
 
 #personalMail {
   border: 0;
   padding: 10px;
-  background-color: rgb(206, 191, 191);
+  background-color: rgb(234 228 228);
   color: white;
 }
 /* #textcomment {
@@ -56,32 +63,36 @@
   display: flex;
   flex-direction: column;
   color: white;
+  padding-bottom: 20px;
 }
 #weblink {
-  background-color: rgb(206, 191, 191);
-  padding: 10px;
+  background-color: rgb(234 228 228);
+  padding-bottom: 20px;
   border: 0;
   color: white;
 }
 #textcomment {
-  background-color: rgb(206, 191, 191);
+  background-color: rgb(234 228 228);
   border: 0px;
   color: white;
-  padding: 5px;
+  /* padding: 5px; */
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .Commentbutton button {
   color: white;
   background-color: transparent;
   border: 1px white solid;
-
+  margin-bottom: 20px;
   cursor: pointer;
-  padding-inline: 20px;
+  padding-inline: 50px;
   padding-block: 10px;
-  border-radius: 20px;
+  /* border-radius: 30px; */
+  font-size: 20px;
 }
 .Commentbutton {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .comment-status {

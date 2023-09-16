@@ -40,6 +40,7 @@
 }
 .date img {
   height: 30px;
+  padding-right: 10px;
 }
 .blogheading h3 {
   padding-inline: 30px;
@@ -59,11 +60,12 @@
   color: white;
   background-color: transparent;
   gap: 10px;
-  padding: 5px;
+  padding: 10px 20px 10px 20px;
   border: 1px white solid;
 }
 #facebookShare img {
   height: 30px;
+  margin-right: 10px;
 }
 #twitterShare {
   display: flex;
@@ -71,7 +73,7 @@
   color: white;
   background-color: transparent;
   gap: 10px;
-  padding: 5px;
+  padding: 10px 20px 10px 20px;
   border: 1px white solid;
 }
 #twitterShare a {
@@ -88,6 +90,7 @@
 }
 #twitterShare img {
   height: 30px;
+  margin-right: 10px;
 }
 .page-heading {
   border: 3px solid white;
@@ -119,12 +122,16 @@
   display: flex;
   flex-direction: column;
   color: white;
-  gap: 15px;
+  /* gap: 15px; */
   margin-top: 20px;
   width: 70%;
 }
 .blog-content1 img {
   width: 100%;
+  padding-block: 10px;
+}
+.blog-content1 {
+  padding-block: 10px;
 }
 .full-blog-img {
   display: flex;
@@ -135,13 +142,14 @@
 }
 
 #motivationalImage {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 #motivationalImage img {
-  width: 50%;
-  margin-bottom: 20px;
+  width: 100%;
   margin-left: 20px;
+  margin-bottom: 50px;
 }
 
 .rightside {
@@ -197,11 +205,22 @@
 }
 .prev-Img img {
   width: 100px;
-  padding-top: 5px;
+  padding-block: 5px;
+  height: 100px;
+  object-fit: cover;
 }
 .next-Img img {
   width: 100px;
   padding-top: 5px;
+  height: 100px;
+  object-fit: cover;
+  padding-block: 5px;
+}
+.prev-Img {
+  display: flex;
+}
+.next-Img {
+  display: flex;
 }
 #prev-post {
   width: 50%;
@@ -236,6 +255,7 @@
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 990px) {
   .title-post-next {
     font-size: 12px;
