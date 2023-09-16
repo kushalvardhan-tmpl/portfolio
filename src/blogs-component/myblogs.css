@@ -130,7 +130,7 @@
   text-overflow: ellipsis;
 }
 .Tags {
-  margin: 20px;
+  margin-block: 20px;
 }
 @media (max-width: 768px) {
   .blog-Cont-main {
