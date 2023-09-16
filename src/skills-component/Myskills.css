@@ -15,7 +15,7 @@
 }
 .cont {
   display: flex;
-  padding-inline: 8%;
+  padding-inline: 10%;
   gap: 5%;
 }
 #skillhead {

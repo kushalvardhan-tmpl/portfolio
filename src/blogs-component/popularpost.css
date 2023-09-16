@@ -8,7 +8,7 @@
   background-color: rgba(74, 69, 69, 1);
   color: white;
 }
-.popularCategory h2 {
+.popularCategory h1 {
   padding-bottom: 20px;
 }
 
@@ -24,10 +24,14 @@
 #posts {
   cursor: pointer;
   background-color: rgba(74, 69, 69, 1);
-  border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* display: flex; */
+}
+.image-Popular {
+  width: 50%;
+  height: 100%;
 }
 
 .title-post {
@@ -38,8 +42,13 @@
 }
 
 .image-Popular img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 5px;
+  width: 100px;
+  height: 100%;
+  display: flex;
+
+  object-fit: cover;
+}
+#title-img {
+  display: flex;
+  gap: 10px;
 }

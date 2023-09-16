@@ -7,7 +7,6 @@ import moment from "moment";
 const API =
   "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1";
 
-
 const MyBlogs = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -38,7 +37,7 @@ const MyBlogs = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div className="blog-main-container">
+        <div className="blog-m-container">
           {users?.blogs?.map((blog) => (
             <div key={blog.id} className="blog-Cont-main">
               <div className="blog-posts">

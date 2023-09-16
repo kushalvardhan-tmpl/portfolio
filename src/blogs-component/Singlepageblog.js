@@ -9,6 +9,7 @@ import Loader from "../myComponents/loader";
 import PopularCategory from "./popularpost";
 import PopularTags from "./populartags";
 import SearchResults from "./search";
+import LastTags from "./last-tags";
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noreferrer");
 };
@@ -75,16 +76,20 @@ const SinglePage = () => {
             {loading ? (
               <Loader />
             ) : (
-              <div className="newBlog">
-                <div className="page-heading">
-                  {users?.blog?.Category?.value}
+              <>
+                <div className="newBlog">
+                  <div className="page-heading">
+                    {users?.blog?.Category?.value}
+                  </div>
+
+                  <div
+                    className="blog-content1"
+                    dangerouslySetInnerHTML={{ __html: users?.blog?.content }}
+                  />
                 </div>
 
-                <div
-                  className="blog-content1"
-                  dangerouslySetInnerHTML={{ __html: users?.blog?.content }}
-                />
-              </div>
+                <LastTags />
+              </>
             )}
             <div className="changePost">
               <div id="prev-post">

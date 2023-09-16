@@ -7,6 +7,7 @@
   background-color: rgba(73, 69, 69, 1);
   color: white;
   padding-bottom: 2rem;
+  padding-inline: 10%;
 }
 
 #head {
@@ -19,19 +20,18 @@
 .aboutContainer {
   display: flex;
   gap: 70px;
-  padding-right: 70px;
 }
 .profilepic {
   display: flex;
-  padding-left: 70px;
-  height: 70vh;
-  width: 100vw;
+  /* padding-left: 70px; */
+  height: 50%;
+  width: 100%;
 }
 
 .profilepic img {
   height: 100%;
-  width: 100%;
-  /* aspect-ratio: 1/1; */
+  margin-top: 20px;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -72,7 +72,6 @@
 .icons button {
   background-color: transparent;
   border: 0;
-  width: 30%;
 }
 .icons button img {
   /* height: 50px; */

@@ -35,8 +35,8 @@
 .maps-h h3 {
   font-size: 25px;
 }
-.fullName {
-  padding: 50px 0px 20px 0px;
+.f-fullName {
+  padding: 50px 0px 0px 0px;
 }
 .Send-btn {
   display: flex;
@@ -48,7 +48,8 @@
   color: white;
   padding: 10px 70px 10px 70px;
   margin-block: 25px;
-  border-radius: 20px;
+  border-radius: 30px;
+  font-size: 25px;
 }
 
 .google-map-code {
@@ -74,6 +75,7 @@
   position: absolute;
   z-index: 2;
   background-color: rgba(74, 69, 69, 1);
+  padding-inline: 10px;
 }
 #maps {
   position: relative;

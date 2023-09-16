@@ -83,7 +83,7 @@ function ContactPage() {
           </div>
           <div className="form-c">
             <form>
-              <div className="fullName">
+              <div className="f-fullName">
                 <div id="firstname">
                   <label htmlFor="fname">
                     <b>First Name</b>
