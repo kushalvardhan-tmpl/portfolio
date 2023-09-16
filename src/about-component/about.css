@@ -25,11 +25,12 @@
   display: flex;
   /* padding-left: 70px; */
   height: 50%;
-  width: 100%;
+  width: 50%;
 }
 
 .profilepic img {
   height: 100%;
+
   margin-top: 20px;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -89,13 +90,14 @@
     justify-content: center;
   }
   .profilepic {
-    height: 50vh;
-    padding-left: 0px;
+    display: flex;
+    height: 0vh;
   }
   .profilepic img {
     display: flex;
     justify-content: center;
-    height: 50vh;
+    /* height: 50vh; */
+    height: 100%;
     width: 100%;
   }
   .aboutme {
@@ -112,5 +114,24 @@
   }
   #head {
     font-size: 30px;
+  }
+  .profilepic {
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+  }
+  .icons button img {
+    height: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutContainer {
+    justify-content: center;
+    flex-direction: column;
   }
 }

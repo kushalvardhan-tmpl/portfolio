@@ -130,31 +130,41 @@
     width: 100%;
   }
   .inputForm {
+    /* font-size: 20px; */
     width: 100%;
     height: 100%;
   }
+
   .form {
     justify-content: center;
     height: 100%;
   }
   #fname {
+    border-radius: 0px;
     width: 100%;
     padding: 2px;
   }
   #lname {
+    border-radius: 0px;
     width: 100%;
     padding: 2px;
   }
 
   #email {
-    width: 95%;
+    border-radius: 0px;
+    width: 100%;
     padding: 2px;
   }
   #message {
+    border-radius: 0px;
     width: 100%;
   }
   .Sendbutton {
     margin-bottom: 20px;
+  }
+
+  .Sendbutton {
+    margin: 5px;
   }
   .inputForm h1 {
     font-size: 30px;

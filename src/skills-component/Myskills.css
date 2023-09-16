@@ -134,6 +134,9 @@
   font-size: 25px;
 }
 @media (max-width: 968px) {
+  .cont {
+    flex-direction: column;
+  }
   .skillContainer {
     font-size: 20px;
   }
@@ -183,8 +186,11 @@
   }
 }
 @media (max-width: 520px) {
+  .downloadCv {
+    margin-block: 20px;
+  }
   .skillContainer {
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 1rem;
   }
   .skillList {
@@ -195,14 +201,6 @@
   }
   #skillhead {
     font-size: 30px;
-  }
-}
-@media (max-width: 520px) {
-  .skillContainer {
-    font-size: 15px;
-  }
-  .skillList {
-    font-size: 15px;
   }
   .downloadCv button span {
     font-size: 15px;

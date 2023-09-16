@@ -148,7 +148,7 @@
 }
 #motivationalImage img {
   width: 100%;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-bottom: 50px;
 }
 
@@ -162,7 +162,7 @@
   display: flex;
 
   height: 70px;
-  margin: 20px;
+  margin-block: 20px;
   gap: 15px;
 }
 .iconsblog button {
@@ -305,7 +305,7 @@
     flex-direction: column;
   }
   #search {
-    width: 100%;
+    width: 90%;
   }
   #searchbar button {
     width: 50px;
@@ -360,6 +360,8 @@
   }
   .shareButtons {
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
   #facebookShare {
     width: 50%;
@@ -379,5 +381,8 @@
   }
   .pageContent {
     padding-inline: 5px;
+  }
+  .blogheading h3 {
+    font-size: 15px;
   }
 }

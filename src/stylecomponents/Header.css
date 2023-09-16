@@ -45,6 +45,63 @@
   cursor: pointer;
 }
 
+#menu-toggle {
+  display: none;
+  background-color: rgba(73, 69, 69, 1);
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu nav {
+  padding-block: 5px;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu nav a:hover {
+  color: red;
+}
+@media (max-width: 520px) {
+  .headbuttons {
+    flex-direction: column;
+    height: fit-content;
+  }
+  #menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+  #buttons {
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
+
+  .menu.hidden {
+    display: none;
+  }
+  #hireme button {
+    font-size: 15px;
+  }
+  #hireme {
+    background-color: red;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-top: 5px;
+    margin-right: 0em;
+    margin-left: 0em;
+    transform: skewX(-30deg);
+  }
+}
+
 @media (max-width: 968px) {
   .headbuttons {
     justify-content: center;
@@ -55,34 +112,12 @@
     margin-right: 0;
   }
 }
-@media (max-width: 520px) {
-  .headbuttons {
-    font-size: 10px;
-    padding-top: 10px;
-    height: 5vh;
-  }
-  #hireme {
-    padding: 0px;
-    background-color: transparent;
-  }
-  #hireme button {
-    font-size: 10px;
-  }
-  .skillList ul span {
-    margin-left: 10px;
-  }
-  .mySkillContent {
-    flex-direction: column;
-  }
-}
+
 #homebtn a.active {
   padding-inline: 8px !important;
   color: red;
 }
-/* #aboutbtn a.active {
-  background-color: red !important;
-  padding-inline: 8px !important; */
-/* } */
+
 #contactbtn a.active {
   color: red;
   padding-inline: 8px !important;
@@ -92,7 +127,6 @@
   padding-inline: 8px !important;
 }
 #hirebtn a.active {
-  /* color: rgb(254, 246, 246); */
   background-color: red;
   padding-inline: 8px !important;
 }
