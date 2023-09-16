@@ -50,6 +50,10 @@
   margin-block: 25px;
   border-radius: 30px;
   font-size: 25px;
+  cursor: pointer;
+}
+.Send-btn button:hover {
+  background-color: #0056b3;
 }
 
 .google-map-code {
