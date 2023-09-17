@@ -117,9 +117,6 @@
   }
   .profilepic {
     display: flex;
-
-    height: 100%;
-    width: 100%;
   }
   .icons button img {
     height: 50px;
@@ -132,6 +129,10 @@
   }
   .aboutContainer {
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+  .profilepic {
+    height: 100%;
+    width: 100%;
   }
 }

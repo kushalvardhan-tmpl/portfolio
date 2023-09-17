@@ -169,4 +169,10 @@
   .inputForm h1 {
     font-size: 30px;
   }
+  .form b {
+    font-size: 15px;
+  }
+  #mail {
+    font-size: 15px;
+  }
 }
