@@ -363,12 +363,8 @@
     flex-direction: column;
     width: 100%;
   }
-  #facebookShare {
-    width: 50%;
-    justify-content: center;
-  }
+
   #twitterShare {
-    width: 50%;
     justify-content: center;
   }
   .popul-Tag {
@@ -384,5 +380,31 @@
   }
   .blogheading h3 {
     font-size: 15px;
+  }
+  .shareButtons {
+    font-size: 15px;
+    width: 90%;
+    padding-left: 10px;
+  }
+  #facebookShare {
+    justify-content: center;
+  }
+  #facebookShare a {
+    font-size: 15px;
+  }
+  #twitterShare a {
+    font-size: 15px;
+  }
+  .date-author {
+    font-size: 15px;
+  }
+  .date-author img {
+    height: 20px;
+  }
+  #author-name img {
+    height: 20px;
+  }
+  .pageTag {
+    flex-direction: column;
   }
 }
