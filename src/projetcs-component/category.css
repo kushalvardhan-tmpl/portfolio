@@ -90,4 +90,26 @@
   .categories-section h2 {
     font-size: 30px;
   }
+  .categories-section {
+    padding-inline: 0;
+  }
+}
+.carousel-container {
+  display: none;
+  margin-inline: 20px; 
+}
+
+@media (max-width: 550px) {
+  .carousel-container {
+    display: block; 
+  }
+}
+@media (max-width: 550px) {
+  .category-cards {
+    display: none;
+  }
+  .category-card {
+    padding-inline: 0;
+    width: 200px;
+  }
 }

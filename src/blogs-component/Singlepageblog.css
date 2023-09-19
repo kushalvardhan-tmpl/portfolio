@@ -255,7 +255,12 @@
   display: flex;
   justify-content: center;
 }
-
+#title-new-p {
+  display: none;
+}
+#title-new-n {
+  display: none;
+}
 @media (max-width: 990px) {
   .title-post-next {
     font-size: 12px;
@@ -363,6 +368,9 @@
     flex-direction: column;
     width: 100%;
   }
+  .changePost {
+    margin-inline: 20px;
+  }
 
   #twitterShare {
     justify-content: center;
@@ -375,11 +383,16 @@
     padding: 0;
     margin-inline: 0;
   }
+  #motivationalImage {
+    width: auto;
+  }
   .pageContent {
     padding-inline: 5px;
   }
   .blogheading h3 {
     font-size: 15px;
+    padding: 0;
+    margin-inline: 20px;
   }
   .shareButtons {
     font-size: 15px;
@@ -406,5 +419,29 @@
   }
   .pageTag {
     flex-direction: column;
+  }
+  .next-Img {
+    display: none;
+  }
+  .prev-Img {
+    display: none;
+  }
+  .title-post-next {
+    display: none;
+  }
+  .title-blog-prev {
+    display: none;
+  }
+  #title-new-p {
+    display: flex;
+  }
+  #title-new-n {
+    display: flex;
+  }
+  #next-post {
+    padding-block: 10px;
+  }
+  #prev-post {
+    padding-block: 10px;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../stylecomponents/Header.css";
 
@@ -9,10 +9,36 @@ const Header = () => {
     setMenuVisible(!menuVisible);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 575) {
+        setMenuVisible(true);
+      } else {
+        setMenuVisible(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="header">
       <div id="menu-toggle" onClick={toggleMenu}>
-        ☰
+        <img src="/assets/menu.png" alt="buttons view" />
+        <div className="hire">
+          {window.innerWidth <= 575 && (
+            <div className="hireme-button">
+              <NavLink to="/hireme">
+                <button>
+                  <b>Hire me</b>
+                </button>
+              </NavLink>
+            </div>
+          )}{" "}
+        </div>
       </div>
       <div className={menuVisible ? "menu visible" : "menu hidden"}>
         <nav className="headbuttons">
@@ -34,13 +60,15 @@ const Header = () => {
             </nav>
           </div>
           <div id="hireme">
-            <nav id="hirebtn">
-              <NavLink to="/hireme">
-                <button>
-                  <b>Hire me</b>
-                </button>
-              </NavLink>
-            </nav>
+            {window.innerWidth >= 575 && (
+              <nav id="hirebtn">
+                <NavLink to="/hireme">
+                  <button>
+                    <b>Hire me</b>
+                  </button>
+                </NavLink>
+              </nav>
+            )}
           </div>
         </nav>
       </div>

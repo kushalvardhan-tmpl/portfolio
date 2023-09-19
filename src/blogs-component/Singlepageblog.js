@@ -96,7 +96,9 @@ const SinglePage = () => {
                 {users?.prevPost !== null && (
                   <>
                     <Link to={`/Singlepageblog/${users?.prevPost?.id}`}>
+                      {" "}
                       <img src={"/assets/left.png"} alt="previous" />{" "}
+                      <div id="title-new-p">Previous post</div>
                     </Link>
                     <div className="title-blog-prev">
                       {users?.prevPost?.title}{" "}
@@ -112,6 +114,7 @@ const SinglePage = () => {
                 {users?.nextPost !== null && (
                   <>
                     <div className="next-Img">
+                      {" "}
                       <img src={users?.nextPost?.image} />
                     </div>
                     <div className="title-post-next">
@@ -119,6 +122,7 @@ const SinglePage = () => {
                     </div>
                     <Link to={`/Singlepageblog/${users?.nextPost?.id}`}>
                       <img src={"/assets/right.png"} alt="next" />
+                      <div id="title-new-n">Next post</div>
                     </Link>
                   </>
                 )}

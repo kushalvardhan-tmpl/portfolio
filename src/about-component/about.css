@@ -113,13 +113,35 @@
     font-size: 15px;
   }
   #head {
+    padding-block: 10px;
     font-size: 30px;
+    margin-top: 25px;
   }
   .profilepic {
     display: flex;
   }
   .icons button img {
     height: 50px;
+  }
+  .Container {
+    padding: 0;
+    /* background-color: rgba(73, 69, 69, 1); */
+  }
+  .aboutContainer {
+    margin-inline: 20px;
+    padding: 0;
+    gap: 20px;
+  }
+  #btn {
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+  }
+  .icons {
+    height: 30px;
+    margin-block: 10px;
+  }
+  .icons button img {
+    height: 30px;
   }
 }
 @media (max-width: 1024px) {
