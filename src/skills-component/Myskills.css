@@ -168,8 +168,8 @@
   }
 
   .skillList ul span {
-    position: relative;
-    right: auto;
+    /* position: relative; */
+    /* right: auto; */
   }
 
   .mySkillContent {
@@ -184,7 +184,26 @@
     padding-inline: 7px;
     padding-block: 5px;
   }
+  #percentage-bar1 {
+    height: 5px;
+  }
+  #percentage-bar2 {
+    height: 5px;
+  }
+  #percentage-bar3 {
+    height: 5px;
+  }
+  #percentage-bar4 {
+    height: 5px;
+  }
+  #percentage-bar5 {
+    height: 5px;
+  }
+  .skillList {
+    margin-bottom: 10px;
+  }
 }
+
 @media (max-width: 520px) {
   .downloadCv {
     margin-block: 20px;
@@ -204,5 +223,17 @@
   }
   .downloadCv button span {
     font-size: 15px;
+  }
+  .mySkillContent {
+    padding: 0;
+    margin: 0;
+  }
+  .cont {
+    padding: 0;
+    margin-inline: 20px;
+  }
+  .downloadCv button {
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
   }
 }

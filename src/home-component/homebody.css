@@ -46,18 +46,22 @@
 @media (max-width: 968px) {
   .headingcontainer {
     font-size: large;
+    height: auto;
   }
 }
 @media (max-width: 570px) {
   .headings h1 {
     font-size: 20px;
   }
+  .headings {
+    margin: 100px 20px 50px 20px;
+  }
   .headings h3 {
     font-size: 15px;
   }
 
   #profilebutton a {
-    padding: 3px 5px 3px 5px;
+    padding: 5px 10px 5px 10px;
     font-size: 14px;
   }
 }

@@ -156,14 +156,37 @@
     margin: 20px;
   }
 }
-@media (max-width: 520px) {
-  #head-blog h3 {
+@media (max-width: 550px) {
+  .myBlog-h h3 {
     font-size: 30px;
+    font-weight: 700;
   }
-  .blog-main-container {
-    padding-inline: 1rem;
-  }
+
   .pageContent {
     padding-inline: 5px;
+  }
+  .blog-Cont-main {
+    margin-inline: 20px;
+  }
+  .blog-m-container {
+    padding: 0;
+  }
+  .Loadmore a button {
+    font-size: 14px;
+  }
+  .Loadmore button {
+    padding: 5px 10px 5px 10px;
+  }
+  .Tags {
+    margin-inline: 20px;
+  }
+  .iconsblogs {
+    margin-block: 0;
+  }
+  #motivationalImage {
+    margin-inline: 20px;
+  }
+  #head-blog h3 {
+    font-size: 30px;
   }
 }

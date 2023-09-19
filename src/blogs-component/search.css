@@ -89,3 +89,12 @@
 .hide-results-button:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 550px) {
+  .search-bar-container {
+    margin-inline: 20px;
+  }
+  #search {
+    width: 100%;
+  }
+}

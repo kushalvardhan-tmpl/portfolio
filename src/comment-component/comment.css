@@ -162,3 +162,12 @@
     width: 50%;
   }
 }
+@media (max-width: 550px) {
+  .Commentpage {
+    width: auto;
+    margin-inline: 20px;
+  }
+  .comments h3 {
+    font-size: 25px;
+  }
+}
