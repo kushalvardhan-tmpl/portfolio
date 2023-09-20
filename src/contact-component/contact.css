@@ -125,6 +125,13 @@
   }
 }
 @media (max-width: 450px) {
+  .form form {
+    padding: 10px 30px 5px 20px;
+    width: 80%;
+  }
+  #textmsg {
+    font-size: 15px;
+  }
   .fullName {
     gap: 10px;
     width: 100%;
