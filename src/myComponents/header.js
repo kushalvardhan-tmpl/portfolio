@@ -27,9 +27,8 @@ const Header = () => {
   return (
     <div className="header">
       <div id="menu-toggle">
-        <div onClick={toggleMenu}>
-          <img src="/assets/menu.png" alt="buttons view" />
-        </div>
+        <img src="/assets/menu.png" alt="buttons view" onClick={toggleMenu} />
+
         <div className="hire">
           {window.innerWidth <= 575 && (
             <div className="hireme-button">
