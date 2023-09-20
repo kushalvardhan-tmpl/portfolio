@@ -357,11 +357,12 @@
 }
 @media (max-width: 520px) {
   .date-author {
-    flex-direction: column;
-    gap: 2px;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 20px;
   }
   #author-name img {
-    padding: 2px 5px 2px 5px;
+    padding: 0;
   }
   .shareButtons {
     justify-content: center;
@@ -370,6 +371,7 @@
   }
   .changePost {
     margin-inline: 20px;
+    padding-inline: 5px;
   }
 
   #twitterShare {
@@ -429,6 +431,9 @@
   .title-post-next {
     display: none;
   }
+  .title-post-next a img {
+    padding-left: 30px;
+  }
   .title-blog-prev {
     display: none;
   }
@@ -440,8 +445,14 @@
   }
   #next-post {
     padding-block: 10px;
+    align-items: end;
   }
   #prev-post {
     padding-block: 10px;
+    align-items: flex-start;
+  }
+  .newBlog {
+    padding-inline: 5px;
+    margin-inline: 20px;
   }
 }

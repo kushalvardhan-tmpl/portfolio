@@ -68,11 +68,16 @@
   color: red;
 }
 @media (max-width: 520px) {
+  .menu nav {
+    background-color: rgba(73, 69, 69, 1);
+    z-index: 5;
+  }
   .headbuttons {
     flex-direction: column;
+    width: auto;
     height: fit-content;
     align-items: flex-start;
-    padding-inline: 5px;
+    padding: 20px;
     background-color: transparent;
   }
   #menu-toggle {
@@ -88,7 +93,8 @@
     margin-block: 10px;
   }
   #buttons {
-    /* flex-direction: column; */
+    align-items: flex-start;
+    flex-direction: column;
     font-size: 15px;
     gap: 20px;
   }
@@ -108,6 +114,8 @@
     background-color: red;
     padding: 5px 10px 5px 10px;
     margin-block: 10px;
+    display: flex;
+    align-items: center;
   }
   .hire button {
     color: white;
@@ -118,7 +126,7 @@
   #hireme {
     display: none;
   }
-  .header {
+  .header #menu-toggle {
     height: 50px;
     background-color: rgba(73, 69, 69, 1);
     padding-inline: 20px;

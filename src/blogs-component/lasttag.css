@@ -7,8 +7,18 @@
   border-bottom: 1px solid white;
   border-inline: 1px solid white;
   padding-inline: 10px;
+  flex-direction: column;
 }
 .pageTag {
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 520px) {
+  .page-tags {
+    margin-inline: 20px;
+  }
+  .pageTag {
+    flex-wrap: wrap;
+  }
 }

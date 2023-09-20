@@ -189,4 +189,7 @@
   #head-blog h3 {
     font-size: 30px;
   }
+  .myBlog-head {
+    height: 200px;
+  }
 }
