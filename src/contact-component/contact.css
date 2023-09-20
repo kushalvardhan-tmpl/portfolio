@@ -140,24 +140,21 @@
     height: 100%;
   }
   #fname {
-    border-radius: 0px;
     width: 100%;
-    padding: 2px;
+    padding: 10px;
   }
   #lname {
-    border-radius: 0px;
     width: 100%;
-    padding: 2px;
+    padding: 10px;
   }
 
   #email {
-    border-radius: 0px;
     width: 100%;
-    padding: 2px;
+    padding: 10px;
   }
   #message {
-    border-radius: 0px;
     width: 100%;
+    padding-inline: 10px;
   }
   .Sendbutton {
     margin-bottom: 20px;

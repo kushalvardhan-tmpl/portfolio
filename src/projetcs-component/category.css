@@ -96,12 +96,12 @@
 }
 .carousel-container {
   display: none;
-  margin-inline: 20px; 
+  margin-inline: 20px;
 }
 
 @media (max-width: 550px) {
   .carousel-container {
-    display: block; 
+    display: block;
   }
 }
 @media (max-width: 550px) {
@@ -111,5 +111,11 @@
   .category-card {
     padding-inline: 0;
     width: 200px;
+  }
+  .projectitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
