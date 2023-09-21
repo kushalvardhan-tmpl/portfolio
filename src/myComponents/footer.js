@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <div id="end">
         <p>
-          &#169;Tunica Design. All Rights Reserved.Designed By Kushal Vardhan{" "}
+          &#169;Tunica Design. All Rights Reserved. Designed By Kushal Vardhan{" "}
         </p>
       </div>
     </div>

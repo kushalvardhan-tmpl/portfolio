@@ -21,6 +21,10 @@ const Comment = ({ blogId }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!validateForm()) {
+      return;
+    }
+
     try {
       const response = await fetch(
         `https://portfolio-website-lkvm.onrender.com/api/blogs/comment/${blogId}`,
@@ -59,6 +63,27 @@ const Comment = ({ blogId }) => {
       console.error("Error:", error);
       setCommentStatus("Error: " + error.message);
     }
+  };
+  const validateForm = () => {
+    const { name, email, website, message } = commentData;
+
+    if (!name || !email || !website || !message) {
+      alert("All fields are required");
+      return false;
+    }
+    const namePattern = /^[a-zA-Z ]*$/;
+    if (!namePattern.test(name)) {
+      alert("Only Letters can be used as a Name");
+      return false;
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!emailPattern.test(email)) {
+      alert("Invalid email format");
+      return false;
+    }
+
+    return true;
   };
 
   return (
@@ -102,12 +127,12 @@ const Comment = ({ blogId }) => {
                 pattern="https?://.+"
               />
             </div>
-            <div id="textmsg">
+            <div id="text-msg">
               <label>Message</label>
               <textarea
-                id="textcomment"
+                id="text-msg-area"
                 name="message"
-                rows="10"
+                rows="15"
                 value={commentData.message}
                 onChange={handleChange}
                 required

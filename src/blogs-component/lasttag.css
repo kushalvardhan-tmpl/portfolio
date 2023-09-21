@@ -7,7 +7,9 @@
   border-bottom: 1px solid white;
   border-inline: 1px solid white;
   padding-inline: 10px;
-  flex-direction: column;
+}
+.page-tags h1 {
+  font-size: 26px;
 }
 .pageTag {
   display: flex;
@@ -17,6 +19,7 @@
 @media (max-width: 520px) {
   .page-tags {
     margin-inline: 20px;
+    flex-direction: column;
   }
   .pageTag {
     flex-wrap: wrap;

@@ -15,7 +15,8 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  font-size: 25px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 #buttons a {
@@ -26,7 +27,8 @@
   font-family: poppins;
 }
 #hireme {
-  background-color: red;
+  background-color: rgba(164, 27, 27, 1);
+
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 2em;
@@ -38,7 +40,8 @@
 #hireme button {
   font-size: 25px;
   background-color: transparent;
-  color: white;
+  color: rgba(244, 241, 241, 1);
+
   border: 0em;
   font-family: poppins;
   transform: skewx(30deg);
@@ -65,24 +68,24 @@
 }
 
 .menu nav a:hover {
-  color: red;
+  color: rgba(164, 27, 27, 1);
 }
 @media (max-width: 520px) {
   #homebtn a.active {
     padding-inline: 0px !important;
-    color: red;
+    color: rgba(164, 27, 27, 1);
   }
 
   #contactbtn a.active {
-    color: red;
+    color: rgba(164, 27, 27, 1);
     padding-inline: 0px !important;
   }
   #blogs-btn a.active {
-    color: red;
+    color: rgba(164, 27, 27, 1);
     padding-inline: 0px !important;
   }
   #hirebtn a.active {
-    background-color: red;
+    background-color: rgba(164, 27, 27, 1);
     padding-inline: 0px !important;
   }
 
@@ -136,7 +139,7 @@
 
   .hire {
     transform: skewX(-30deg);
-    background-color: red;
+    background-color: rgba(164, 27, 27, 1);
     padding: 5px 10px 5px 10px;
     margin-block: 10px;
     display: flex;
@@ -144,7 +147,7 @@
   }
   .hire button {
     color: white;
-    background-color: red;
+    background-color: rgba(164, 27, 27, 1);
     border: 0;
     transform: skewX(30deg);
   }
@@ -171,19 +174,15 @@
 }
 
 #homebtn a.active {
-  padding-inline: 8px;
-  color: red;
+  color: rgba(164, 27, 27, 1);
 }
 
 #contactbtn a.active {
-  color: red;
-  padding-inline: 8px;
+  color: rgba(164, 27, 27, 1);
 }
 #blogs-btn a.active {
-  color: red;
-  padding-inline: 8px;
+  color: rgba(164, 27, 27, 1);
 }
 #hirebtn a.active {
-  background-color: red;
-  padding-inline: 8px;
+  background-color: rgba(164, 27, 27, 1);
 }
