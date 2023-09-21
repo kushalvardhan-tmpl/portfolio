@@ -35,6 +35,9 @@
   border: 2px solid rgb(70, 63, 63);
   background-color: #5a5555;
 }
+.blog-Cont-main :hover {
+  background-color: black;
+}
 .blog-main-container :hover {
   background-color: black;
 
@@ -53,9 +56,16 @@
 }
 
 .blog-Title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 20px;
-  font-weight: bold;
+
   margin-top: 10px;
+  font-family: "Inter";
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .blog-content {
@@ -71,7 +81,7 @@
 .date-published,
 .author {
   font-size: 14px;
-  color: rgb(176, 170, 170);
+  color: rgba(241, 217, 217, 1);
 }
 #head-blog {
   background-color: rgba(74, 69, 69, 1);
@@ -83,6 +93,7 @@
   color: white;
   font-size: 45px;
   font-weight: 700;
+  font-family: Inter;
 }
 .Loadmore {
   display: flex;
@@ -93,15 +104,16 @@
 .Loadmore a button {
   color: white;
   background-color: transparent;
-  border: 2px solid white;
+  border: 3px solid white;
   padding: 5px 20px 5px 20px;
   border-radius: 35px;
   cursor: pointer;
   font-size: 29px;
   margin-top: 20px;
+  font-weight: 400;
 }
 .Loadmore a :hover {
-  background-color: #0056b3;
+  background-color: rgba(164, 27, 27, 1);
 }
 .myBlog-head {
   display: flex;
@@ -121,6 +133,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 47px;
+  font-family: "Inter";
+  font-weight: 700;
 }
 .blog-desc {
   display: -webkit-box !important;
@@ -128,6 +143,9 @@
   -webkit-box-orient: vertical !important;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter";
 }
 .Tags {
   margin-block: 20px;

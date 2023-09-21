@@ -14,6 +14,7 @@
   padding-bottom: 10px;
   font-size: 45px;
   font-weight: 700;
+  font-family: Inter;
 }
 
 .form {
@@ -27,7 +28,8 @@
   width: 60%;
 }
 .form b {
-  font-size: 25px;
+  font-size: 34px;
+  font-family: Inter;
   font-weight: 700;
 }
 .fullName {
@@ -44,30 +46,44 @@
   width: 100%;
   flex-direction: column;
   margin-bottom: 20px;
+  font-size: 34px;
+  font-family: "Inter";
+  font-weight: 700;
 }
 #fname {
   border-radius: 10px;
   border: 0;
   padding-block: 15px;
-  background-color: gray;
+  background: rgba(244, 241, 241, 0.6);
+
+  padding-left: 10px;
+  color: white;
 }
 #lname {
   border-radius: 10px;
   border: 0;
   padding-block: 15px;
-  background-color: gray;
+  background: rgba(244, 241, 241, 0.6);
+
+  padding-left: 10px;
+  color: white;
 }
 #lastname {
   display: flex;
   width: 100%;
   flex-direction: column;
   margin-bottom: 20px;
+  font-size: 34px;
+  font-family: "Inter";
+  font-weight: 700;
 }
 #mail {
   display: flex;
   flex-direction: column;
   margin-block: 20px;
   font-weight: 700;
+  font-size: 34px;
+  font-family: Inter;
 }
 #textmsg {
   display: flex;
@@ -75,23 +91,28 @@
   flex-direction: column;
   padding: 15px 0px 10px 0px;
   font-weight: 700;
+  font-family: Inter;
+  font-size: 34px;
 }
 
 #email {
   padding: 10px;
   border: 0;
   border-radius: 10px;
-  background-color: gray;
+  background: rgba(244, 241, 241, 0.6);
+
   color: white;
   padding-block: 15px;
 }
 
 #message {
-  background-color: gray;
+  background: rgba(244, 241, 241, 0.6);
 
+  padding-left: 10px;
   border: 0;
   border-radius: 10px;
   color: white;
+  padding-block: 5px;
 }
 .Sendbutton {
   display: flex;
@@ -107,7 +128,7 @@
   padding: 10px 30px 10px 30px;
 }
 .Sendbutton :hover {
-  background-color: #0056b3;
+  background-color: rgba(164, 27, 27, 1);
 }
 
 @media (max-width: 670px) {

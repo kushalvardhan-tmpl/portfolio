@@ -6,7 +6,7 @@
 .skillContainer {
   background-image: url("../../public/assets/banner-2.png");
   border: 0;
-
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: poppins;
@@ -21,9 +21,10 @@
 #skillhead {
   display: flex;
   justify-content: center;
-  padding: 30px 0px 30px 0px;
+  padding: 50px 0px 50px 0px;
   font-size: 45px;
   font-weight: 700;
+  font-family: Inter;
 }
 
 .mySkillContent {
@@ -42,17 +43,21 @@
   width: 100%;
   justify-content: space-between;
   /* margin-right: 30px; */
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .skillList ul {
   position: relative;
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
 .skillList ul span {
   position: absolute;
   right: 0;
+  font-size: 25px;
+  font-weight: 400;
 }
 
 #percentage-bar1 {
@@ -116,6 +121,7 @@
 
 .downloadCv button {
   font-size: 25px;
+  font-weight: 800;
   display: flex;
   color: white;
   border: 3px white solid;
@@ -128,7 +134,7 @@
   cursor: pointer;
 }
 .downloadCv button:hover {
-  background-color: #0056b3;
+  background-color: rgba(164, 27, 27, 1);
 }
 .downloadCv button span {
   font-size: 25px;
@@ -205,6 +211,13 @@
 }
 
 @media (max-width: 520px) {
+  .skillList ul span {
+    font-size: 15px;
+  }
+  .skillList ul {
+    font-size: 20px;
+    font-weight: 400;
+  }
   .downloadCv {
     margin-block: 20px;
   }

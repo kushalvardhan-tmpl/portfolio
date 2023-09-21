@@ -32,11 +32,11 @@ const PopularCategory = () => {
                 <div className="title-p"> {post?.title}</div>
               </div>
               <div className="dateandauthor">
-                <div className="date-published">
-                  {moment(post.createdAt).format("MM / MM / YYYY")}
-                </div>
                 <div className="author">
                   {post.Author.firstName + " " + post.Author.lastName}
+                </div>
+                <div className="date-published">
+                  {moment(post.createdAt).format("MM MMM YYYY")}
                 </div>
               </div>
             </Link>

@@ -45,14 +45,24 @@ const SinglePage = () => {
           <div className="blogheading">
             <h3>{users?.blog?.title}</h3>
             <div className="date-author">
-              <div id="author-name">
-                <img src="/assets/user.png" />
-                {users?.blog?.Author?.firstName}
-              </div>
               <div className="date">
                 <img src="/assets/vector.png" alt="" />
 
-                {moment(users?.blog?.createdAt).format("MM/MM/YYYY")}
+                {moment(users?.blog?.createdAt).format("MM MMM YYYY")}
+              </div>
+              <div id="author-name">
+                <img src="/assets/user.png" />
+                {users?.blog?.Author?.firstName + users?.blog?.Author?.lastName}
+              </div>
+              <div id="comments-png">
+                <img src="/assets/comments.png" alt="comments" />
+                15 {""}
+                {/* *{users?.blog?.views + ""}  */}
+                comments
+              </div>
+              <div id="views">
+                <img src="/assets/views.png" alt="views" />
+                {users?.blog?.views + ""} views
               </div>
             </div>
             <div className="shareButtons">

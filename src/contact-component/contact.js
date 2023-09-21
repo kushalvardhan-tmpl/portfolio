@@ -63,6 +63,16 @@ function Contact() {
       alert("All fields are required");
       return false;
     }
+    const namePattern = /^[a-zA-Z ]*$/;
+    if (!namePattern.test(fname)) {
+      alert("Only Letters can be used as a Firstname");
+      return false;
+    }
+
+    if (!namePattern.test(lname)) {
+      alert("Only Letters can be used as a Lastname");
+      return false;
+    }
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailPattern.test(email)) {

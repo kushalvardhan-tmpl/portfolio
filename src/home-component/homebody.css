@@ -10,8 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
-  font-family: poppins;
-  font-size: 25px;
+  background-position: bottom center;
 }
 .headings {
   color: white;
@@ -33,14 +32,15 @@
   text-decoration: none;
   background-color: transparent;
   color: white;
-  border: 1px white solid;
+  border: 3px white solid;
   border-radius: 30px;
   padding: 10px 20px 10px 20px;
   cursor: pointer;
   font-size: 29px;
+  font-weight: 700;
 }
 #profilebutton a:hover {
-  background-color: #0056b3;
+  background-color: rgba(164, 27, 27, 1);
 }
 
 @media (max-width: 968px) {

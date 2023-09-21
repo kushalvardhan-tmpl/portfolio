@@ -62,11 +62,11 @@ const MyBlogs = () => {
                       <div className="blog-desc">{blog.shortDescription}</div>
                       <div className="blogcontent">{blog.content}</div>
                       <div className="dateandauthor">
-                        <div className="date-published">
-                          {moment(blog.createdAt).format("MM/MM/YYYY")}
-                        </div>
                         <div className="author">
                           {blog.Author.firstName + " " + blog.Author.lastName}
+                        </div>
+                        <div className="date-published">
+                          {moment(blog.createdAt).format("MM MMM YYYY")}
                         </div>
                       </div>
                     </Link>

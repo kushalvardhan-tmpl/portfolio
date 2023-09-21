@@ -21,7 +21,7 @@
   width: fit-content;
   position: absolute;
   background-color: rgba(74, 69, 69, 1);
-  padding: 5px 10px 5px 10px;
+  padding: 5px 40px 5px 40px;
 }
 .form-c {
   border: 2px solid white;
@@ -36,7 +36,9 @@
   font-size: 25px;
 }
 .f-fullName {
-  padding: 50px 0px 0px 0px;
+  display: flex;
+  padding: 70px 0px 0px 0px;
+  gap: 50px;
 }
 .Send-btn {
   display: flex;
@@ -44,7 +46,7 @@
 }
 .Send-btn button {
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
   padding: 10px 70px 10px 70px;
   margin-block: 25px;
@@ -53,7 +55,7 @@
   cursor: pointer;
 }
 .Send-btn button:hover {
-  background-color: #0056b3;
+  background-color: rgba(164, 27, 27, 1);
 }
 
 .google-map-code {
@@ -74,7 +76,9 @@
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 30px;
+  font-size: 34px;
+  font-family: Inter;
+  font-weight: 700;
   border: 2px solid white;
   position: absolute;
   z-index: 2;

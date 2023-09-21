@@ -64,7 +64,15 @@ function ContactPage() {
       alert("All fields are required");
       return false;
     }
-
+    const namePattern = /^[a-zA-Z ]*$/;
+    if (!namePattern.test(fname)) {
+      alert("Digits cannot be used in the Firstname");
+      return false;
+    }
+    if (!namePattern.test(lname)) {
+      alert("Digits cannot be used in Lastname");
+      return false;
+    }
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if (!emailPattern.test(email)) {
       alert("Invalid email format");
