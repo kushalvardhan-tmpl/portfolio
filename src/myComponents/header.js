@@ -9,20 +9,20 @@ const Header = () => {
     setMenuVisible(!menuVisible);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 575) {
-        setMenuVisible(true);
-      } else {
-        setMenuVisible(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 575) {
+  //       setMenuVisible(true);
+  //     } else {
+  //       setMenuVisible(false);
+  //     }
+  //   };
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <div className="header">
