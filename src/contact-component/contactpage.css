@@ -129,4 +129,14 @@
     font-size: 12px;
     margin: -12px;
   }
+  .f-fullName {
+    flex-direction: column;
+    gap: 0;
+  }
+  #firstname label {
+    font-size: 15px;
+  }
+  #lastname label {
+    font-size: 15px;
+  }
 }

@@ -18,24 +18,27 @@
 
 .selected {
   transition: all.3s ease;
-  background-color: red !important;
+  background-color: rgba(164, 27, 27, 1) !important;
+  /* background-color: rgb(183, 30, 30); */
+  border-radius: 40px !important;
 }
 
 .category-buttons button {
+  border-radius: 40px !important;
   padding: 10px 20px;
   margin-block: 25px;
   margin-inline: 25px;
   background-color: transparent;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   cursor: pointer;
   font-size: 28px;
   font-weight: 400;
 }
 
 .category-buttons button:hover {
-  background-color: rgba(164, 27, 27, 1);
+  background-color: rgb(185, 19, 19);
 }
 
 .category-cards {
@@ -88,7 +91,7 @@
   cursor: pointer;
 }
 .view-button button:hover {
-  background-color: rgba(164, 27, 27, 1);
+  background-color: rgb(185, 19, 19);
 }
 @media (max-width: 520px) {
   .categories-section h2 {

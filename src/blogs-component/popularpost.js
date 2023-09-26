@@ -33,6 +33,7 @@ const PopularCategory = () => {
               </div>
               <div className="dateandauthor">
                 <div className="author">
+                  By {""}
                   {post.Author.firstName + " " + post.Author.lastName}
                 </div>
                 <div className="date-published">

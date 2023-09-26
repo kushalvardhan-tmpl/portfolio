@@ -28,6 +28,7 @@
   /* padding-left: 70px; */
   height: 50%;
   width: 50%;
+  padding-bottom: 30px;
 }
 
 .profilepic img {
@@ -36,8 +37,8 @@
   margin-top: 20px;
   aspect-ratio: 2.7/3;
   object-fit: cover;
-  padding-bottom: 30px;
-  border-radius: 20px;
+
+  border-radius: 20px !important;
 }
 .aboutme {
   font-size: 25px;

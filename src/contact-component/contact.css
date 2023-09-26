@@ -55,18 +55,19 @@
   border: 0;
   padding-block: 15px;
   background: rgba(244, 241, 241, 0.6);
-
   padding-left: 10px;
-  color: white;
+  font-size: 15px;
+  color: rgb(3, 3, 3);
 }
 #lname {
   border-radius: 10px;
   border: 0;
   padding-block: 15px;
   background: rgba(244, 241, 241, 0.6);
-
+  font-size: 15px;
   padding-left: 10px;
-  color: white;
+  /* color: white; */
+  color: rgb(3, 3, 3);
 }
 #lastname {
   display: flex;
@@ -101,17 +102,20 @@
   border-radius: 10px;
   background: rgba(244, 241, 241, 0.6);
 
-  color: white;
+  /* color: white; */
+  font-size: 15px;
+  color: rgb(3, 3, 3);
   padding-block: 15px;
 }
 
 #message {
   background: rgba(244, 241, 241, 0.6);
-
+  font-size: 15px;
+  color: rgb(3, 3, 3);
   padding-left: 10px;
   border: 0;
   border-radius: 10px;
-  color: white;
+  /* color: white; */
   padding-block: 5px;
 }
 .Sendbutton {
