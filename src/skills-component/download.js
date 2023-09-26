@@ -22,7 +22,7 @@ const DownloadButton = () => {
 
   return (
     <div className="downloadCv">
-      <button onClick={handleDownload}>Download CV</button>
+      <button onClick={handleDownload}>Download My CV</button>
     </div>
   );
 };

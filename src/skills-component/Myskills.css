@@ -130,8 +130,9 @@
   margin-top: 20px;
 
   padding-inline: 20px;
-  padding-block: 10px;
+  padding-block: 15px;
   cursor: pointer;
+  font-family: Inter;
 }
 .downloadCv button:hover {
   background-color: rgba(164, 27, 27, 1);

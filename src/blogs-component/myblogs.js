@@ -51,6 +51,7 @@ const MyBlogs = () => {
                   <div className="blogcontent">{blog.content}</div>
                   <div className="dateandauthor">
                     <div className="author">
+                      By {""}
                       {blog.Author.firstName + " " + blog.Author.lastName}
                     </div>
                     <div className="date-published">

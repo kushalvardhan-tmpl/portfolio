@@ -310,6 +310,7 @@
   .popul-Tag {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
