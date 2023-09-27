@@ -227,3 +227,10 @@
     gap: 0;
   }
 }
+@media (max-width: 1366px) {
+  .blog-m-container,
+  .blog-main-container {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
