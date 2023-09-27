@@ -119,21 +119,21 @@ function ContactPage() {
                   />
                 </div>
               </div>
-              <div id="mail">
+              <div id="u-mail">
                 <label htmlFor="email"> Email</label>
                 <input
                   type="email"
-                  id="email"
+                  id="p-email"
                   name="email"
                   value={formdata.email}
                   onChange={handleChange}
                   required
                 />
               </div>
-              <div id="textmsg">
+              <div id="p-textmsg">
                 <label htmlFor="message"> Message</label>
                 <textarea
-                  id="message"
+                  id="u-message"
                   name="message"
                   rows="15"
                   value={formdata.message}

@@ -20,6 +20,7 @@
   .page-tags {
     margin-inline: 20px;
     flex-direction: column;
+    margin-bottom: 0px;
   }
   .pageTag {
     flex-wrap: wrap;

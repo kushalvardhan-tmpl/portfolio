@@ -62,6 +62,7 @@
   padding: 10px;
   background-color: rgb(234 228 228);
   /* color: white; */
+  outline: none !important;
 }
 
 #personalMail {
@@ -69,6 +70,7 @@
   padding: 10px;
   background-color: rgb(234 228 228);
   /* color: white; */
+  outline: none !important;
 }
 /* #textcomment {
   padding: 50px;
@@ -91,6 +93,7 @@
   /* color: rgb(105, 0, 0); */
   padding-left: 10px;
   padding-top: 5px;
+  outline: none !important;
 }
 #textcomment {
   background-color: rgb(234 228 228);
@@ -115,6 +118,7 @@
   background-color: rgb(234 228 228);
   margin-bottom: 30px;
   padding: 5px 0 0 10px;
+  outline: none !important;
 }
 .Commentbutton button {
   color: white;
@@ -210,5 +214,20 @@
   }
   .comments h3 {
     font-size: 25px;
+  }
+  #text-msg-area {
+    padding: 5px 0 0 4px;
+  }
+  #weblink {
+    padding: 5px 0 5px 4px;
+  }
+  #personalMail {
+    padding: 5px 0 5px 4px;
+  }
+  #name {
+    padding: 5px 0 5px 4px;
+  }
+  #Name {
+    padding-bottom: 15px;
   }
 }
