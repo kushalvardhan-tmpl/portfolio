@@ -156,6 +156,7 @@
   }
   #textmsg {
     font-size: 15px;
+    padding-top: 0px;
   }
   .fullName {
     gap: 10px;
@@ -203,5 +204,6 @@
   }
   #mail {
     font-size: 15px;
+    margin-top: 0;
   }
 }

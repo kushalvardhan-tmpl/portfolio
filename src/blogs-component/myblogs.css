@@ -190,7 +190,9 @@
     padding: 0;
   }
   .Loadmore a button {
-    font-size: 14px;
+    font-size: 15px;
+
+    padding: 8px 15px 8px 15px;
   }
   .Loadmore button {
     padding: 5px 10px 5px 10px;

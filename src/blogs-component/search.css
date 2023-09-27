@@ -20,6 +20,7 @@
 #search {
   background-color: gray;
   color: white;
+  outline: none;
 }
 
 .search-input {
@@ -44,7 +45,7 @@
 }
 
 .search-button button:hover {
-  background-color: rgba(164, 27, 27, 1);
+  background-color: maroon;
 }
 
 .search-button button:disabled {

@@ -33,6 +33,7 @@
 }
 .links a {
   text-decoration: none;
+  font-family: Inter;
   color: rgb(249, 249, 252);
 }
 #end p {

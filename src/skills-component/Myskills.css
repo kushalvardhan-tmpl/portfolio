@@ -230,10 +230,11 @@
     font-size: 15px;
   }
   .mySkillContent p {
-    font-size: 15px;
+    font-size: 20px;
   }
   #skillhead {
     font-size: 30px;
+    padding-bottom: 20px;
   }
   .downloadCv button span {
     font-size: 15px;
@@ -247,7 +248,8 @@
     margin-inline: 20px;
   }
   .downloadCv button {
-    padding: 5px 10px 5px 10px;
-    font-size: 14px;
+    padding: 8px 15px 8px 15px;
+    font-size: 15px;
+    border: 2px solid;
   }
 }

@@ -397,8 +397,8 @@
 @media (max-width: 520px) {
   .date-author {
     gap: 20px;
-    justify-content: flex-start;
-    margin-left: 20px;
+    justify-content: center;
+    /* margin-left: 20px; */
   }
   #author-name img {
     padding: 0;
@@ -431,9 +431,10 @@
     padding-inline: 5px;
   }
   .blogheading h3 {
-    font-size: 15px;
-    padding: 0;
-    margin-inline: 20px;
+    font-size: 20px;
+    margin-block: 20px;
+    /* margin-inline: 20px; */
+    padding-inline: 25px;
   }
   .shareButtons {
     font-size: 15px;
@@ -494,5 +495,14 @@
   .newBlog {
     padding-inline: 5px;
     margin-inline: 20px;
+  }
+  .blogheadingcontainer {
+    height: 70vh;
+  }
+  #next-post a img {
+    padding-left: 50px !important;
+  }
+  .changePost {
+    margin-bottom: 50px;
   }
 }

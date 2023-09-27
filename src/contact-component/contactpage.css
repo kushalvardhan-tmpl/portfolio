@@ -97,7 +97,57 @@
   margin-top: 30px;
   padding-top: 50px;
 }
+#u-mail {
+  display: flex;
+  flex-direction: column;
+  margin-block: 20px;
+  font-weight: 700;
+  font-size: 34px;
+  font-family: Inter;
+}
+#p-email {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(244, 241, 241, 0.6);
+
+  /* color: white; */
+  font-size: 15px;
+  color: rgb(3, 3, 3);
+  padding-block: 15px;
+}
+#p-textmsg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 0px 10px 0px;
+  font-weight: 700;
+  font-family: Inter;
+  font-size: 34px;
+}
+#u-message {
+  background: rgba(244, 241, 241, 0.6);
+  font-size: 15px;
+  color: rgb(3, 3, 3);
+  padding-left: 10px;
+  border: 0;
+  border-radius: 10px;
+  /* color: white; */
+  padding-block: 5px;
+}
 @media (max-width: 450px) {
+  #u-message {
+    width: 90%;
+    padding-inline: 10px;
+  }
+  #p-textmsg {
+    font-size: 15px;
+    padding-top: 0px;
+  }
+  #p-email {
+    width: 100%;
+    padding: 10px;
+  }
   #heading-contact h1 {
     font-size: 20px;
   }
@@ -118,8 +168,10 @@
     margin: 0;
   }
   .Send-btn button {
-    padding: 5px 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 15px !important;
   }
+
   .main-contact {
     width: 100%;
     margin-inline: 20px;
@@ -132,11 +184,18 @@
   .f-fullName {
     flex-direction: column;
     gap: 0;
+    width: 90%;
+    padding-top: 35px;
   }
   #firstname label {
     font-size: 15px;
   }
   #lastname label {
     font-size: 15px;
+  }
+  #u-mail {
+    font-size: 15px;
+    margin-top: 0;
+    width: 90%;
   }
 }
