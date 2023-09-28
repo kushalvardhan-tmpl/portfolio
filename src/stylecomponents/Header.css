@@ -118,6 +118,7 @@
   #menu-toggle img {
     cursor: pointer;
     height: 30px;
+    width: 30px;
     margin-block: 10px;
   }
   #buttons {
