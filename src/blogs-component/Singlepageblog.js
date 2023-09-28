@@ -46,12 +46,12 @@ const SinglePage = () => {
             <h3>{users?.blog?.title}</h3>
             <div className="date-author">
               <div className="date">
-                <img src="/assets/vector.png" alt="" />
+                <img src="/assets/vector.png" alt="date icon" />
 
                 {moment(users?.blog?.createdAt).format("MM MMM YYYY")}
               </div>
               <div id="author-name">
-                <img src="/assets/user.png" />
+                <img src="/assets/user.png" alt="user icon"/>
                 {users?.blog?.Author?.firstName +
                   " " +
                   users?.blog?.Author?.lastName}
@@ -117,7 +117,7 @@ const SinglePage = () => {
                     </div>
                     <div className="prev-Img">
                       {" "}
-                      <img src={users?.prevPost?.image} />
+                      <img src={users?.prevPost?.image} alt="previous post image"/>
                     </div>{" "}
                   </>
                 )}
@@ -127,7 +127,7 @@ const SinglePage = () => {
                   <>
                     <div className="next-Img">
                       {" "}
-                      <img src={users?.nextPost?.image} />
+                      <img src={users?.nextPost?.image} alt="next post image"/>
                     </div>
                     <div className="title-post-next">
                       {users?.nextPost?.title}{" "}
@@ -180,7 +180,7 @@ const SinglePage = () => {
               </button>
             </div>
             <div id="motivationalImage">
-              <img src={"/assets/motivational.jpg"} alt="" />
+              <img src={"/assets/motivational.jpg"} alt="motivational image" />
             </div>
           </div>
         </div>

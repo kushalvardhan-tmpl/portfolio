@@ -16,7 +16,7 @@ const HomePage = () => {
       <div className="headingcontainer">
         <div className="headings">
           <h1>Web Developer and Designer</h1>
-          <h3>Practices Development since 2018</h3>
+          <h2>Practices Development since 2018</h2>
 
           <div id="profilebutton">
             <Link to="/aboutpage">

@@ -27,7 +27,7 @@ const PopularCategory = () => {
             <Link to={`/Singlepageblog/${post?.id}`} id="posts" key={post?.id}>
               <div id="title-img">
                 <div className="image-Popular">
-                  <img src={post.image} />
+                  <img src={post.image} alt="post image"/>
                 </div>
                 <div className="title-p"> {post?.title}</div>
               </div>

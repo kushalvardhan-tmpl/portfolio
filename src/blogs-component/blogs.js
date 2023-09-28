@@ -116,7 +116,7 @@ const MyBlogs = () => {
               </button>
             </div>
             <div id="motivationalImage">
-              <img src="/assets/motivational.jpg" alt="" />
+              <img src="/assets/motivational.jpg" alt="motivational Image" />
             </div>
           </div>
         </div>
