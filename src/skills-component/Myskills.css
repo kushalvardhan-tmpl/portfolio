@@ -4,7 +4,7 @@
 }
 
 .skillContainer {
-  background-image: url("../../public/assets/banner-2.png");
+  background-image: url("../../public/assets/banner-2.webp");
   border: 0;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -173,11 +173,6 @@
 @media (max-width: 768px) {
   .skillContainer {
     font-size: 20px;
-  }
-
-  .skillList li span {
-    /* position: relative; */
-    /* right: auto; */
   }
 
   .mySkillContent {

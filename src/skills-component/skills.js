@@ -17,30 +17,45 @@ const Skills = () => {
             </div>
 
             <div className="skillList">
-              <li>
-                HTML & CSS
-                <span>95%</span>
-              </li>
+              <ol>
+                {" "}
+                <li>
+                  HTML & CSS
+                  <span>95%</span>
+                </li>{" "}
+              </ol>
               <div id="percentage-bar1"></div>
-              <li>
-                Javascript
-                <span>75%</span>
-              </li>
+              <ol>
+                {" "}
+                <li>
+                  Javascript
+                  <span>75%</span>
+                </li>
+              </ol>
               <div id="percentage-bar2"></div>
-              <li>
-                PHP
-                <span>80%</span>
-              </li>
+              <ol>
+                {" "}
+                <li>
+                  PHP
+                  <span>80%</span>
+                </li>
+              </ol>
               <div id="percentage-bar3"></div>
-              <li>
-                WordPress
-                <span>95%</span>
-              </li>
+              <ol>
+                {" "}
+                <li>
+                  WordPress
+                  <span>95%</span>
+                </li>
+              </ol>
               <div id="percentage-bar4"></div>
-              <li>
-                Laravel
-                <span>50%</span>
-              </li>
+              <ol>
+                {" "}
+                <li>
+                  Laravel
+                  <span>50%</span>
+                </li>
+              </ol>
               <div id="percentage-bar5"></div>
             </div>
           </div>
