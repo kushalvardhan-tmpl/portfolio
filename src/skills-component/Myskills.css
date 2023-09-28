@@ -46,14 +46,15 @@
   margin-bottom: 70px;
 }
 
-.skillList ul {
+.skillList li {
+  list-style-type: none;
   position: relative;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.skillList ul span {
+.skillList li span {
   position: absolute;
   right: 0;
   font-size: 25px;
@@ -174,7 +175,7 @@
     font-size: 20px;
   }
 
-  .skillList ul span {
+  .skillList li span {
     /* position: relative; */
     /* right: auto; */
   }
@@ -212,10 +213,10 @@
 }
 
 @media (max-width: 520px) {
-  .skillList ul span {
+  .skillList li span {
     font-size: 15px;
   }
-  .skillList ul {
+  .skillList li {
     font-size: 20px;
     font-weight: 400;
   }
