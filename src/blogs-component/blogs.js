@@ -14,7 +14,7 @@ const openInNewTab = (url) => {
 };
 
 const API =
-  "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1";
+  "https://portfolio-website-lkvm.onrender.com/api/home/blogs?pageNo=1&perPage=9";
 
 const MyBlogs = () => {
   const [users, setUsers] = useState([]);
@@ -34,6 +34,8 @@ const MyBlogs = () => {
   useEffect(() => {
     fetchBlogs(API);
   }, []);
+
+  // console.log(users, users.length);
 
   return (
     <>

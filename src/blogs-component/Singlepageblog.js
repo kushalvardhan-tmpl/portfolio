@@ -52,7 +52,9 @@ const SinglePage = () => {
               </div>
               <div id="author-name">
                 <img src="/assets/user.png" />
-                {users?.blog?.Author?.firstName + users?.blog?.Author?.lastName}
+                {users?.blog?.Author?.firstName +
+                  " " +
+                  users?.blog?.Author?.lastName}
               </div>
               <div id="comments-png">
                 <img src="/assets/comments.png" alt="comments" />
