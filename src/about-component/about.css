@@ -99,7 +99,7 @@
   }
   .profilepic {
     display: flex;
-    height: 0vh;
+    /* height: 0vh; */
   }
   .profilepic img {
     display: flex;
