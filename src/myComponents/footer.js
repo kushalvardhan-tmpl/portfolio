@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footerabout">
         <div className="footer-blog">
-          <h3>About Blog</h3>
+          <h1>About Blog</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
             exercitationem sequi asperiores ducimus nam obcaecati id iste, dolor
@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="others">
-          <h3>Links</h3>
+          <h2>Links</h2>
           <div className="links">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/aboutpage">About me</NavLink>

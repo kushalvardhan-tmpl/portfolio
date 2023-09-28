@@ -11,7 +11,7 @@ const Carousel = ({ items }) => {
             <h3>{item.projectName}</h3>
             <div className="image-project">
               <div className="projectitle">{item.name}</div>
-              <img src={item.image} alt={item.projectName} />
+              <img src={item.image} alt="item image" />
               <div className="view-button">
                 <Link to={item.link}>
                   <button>View Project</button>

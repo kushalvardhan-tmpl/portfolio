@@ -4,7 +4,7 @@
   margin: 0%;
 }
 .headbuttons {
-  background-color: rgba(73, 69, 69, 1);
+  background-color: rgba(48, 44, 44);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -73,15 +73,15 @@
 @media (max-width: 520px) {
   #homebtn a.active {
     padding-inline: 0px !important;
-    color: rgba(164, 27, 27, 1);
+    color: rgba(229, 118, 118);
   }
 
   #contactbtn a.active {
-    color: rgba(164, 27, 27, 1);
+    color: rgba(229, 118, 118);
     padding-inline: 0px !important;
   }
   #blogs-btn a.active {
-    color: rgba(164, 27, 27, 1);
+    color: rgba(229, 118, 118);
     padding-inline: 0px !important;
   }
   #hirebtn a.active {
@@ -174,14 +174,14 @@
 }
 
 #homebtn a.active {
-  color: rgba(164, 27, 27, 1);
+  color: rgba(229, 118, 118);
 }
 
 #contactbtn a.active {
-  color: rgba(164, 27, 27, 1);
+  color: rgba(229, 118, 118);
 }
 #blogs-btn a.active {
-  color: rgba(164, 27, 27, 1);
+  color: rgba(229, 118, 118);
 }
 #hirebtn a.active {
   background-color: rgba(164, 27, 27, 1);

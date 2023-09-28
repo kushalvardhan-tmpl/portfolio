@@ -80,7 +80,7 @@ function CategoryCards() {
             <h3>{project.projectName}</h3>
             <div className="image-project">
               <div className="projectitle">{project.name}</div>
-              <img src={project.image} alt={project.projectName} />
+              <img src={project.image} alt="project Image" />
               <div className="view-button">
                 <Link to={project.link}>
                   <button>View Project</button>
