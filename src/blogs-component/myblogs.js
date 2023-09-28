@@ -43,7 +43,7 @@ const MyBlogs = () => {
               <div className="blog-posts">
                 <Link to={`/Singlepageblog/${blog.id}`}>
                   <div className="blog-Image">
-                    <img src={blog.image} />
+                    <img src={blog.image} alt="blog-image"/>
                   </div>
                   <div>{users.id}</div>
                   <div className="blog-Title">{blog.title}</div>
