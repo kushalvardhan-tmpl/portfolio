@@ -142,12 +142,14 @@ const Comment = ({ blogId }) => {
               <button type="submit">
                 <b>Leave a Comment</b>
               </button>
+              <div className="status">
+                {commentStatus && (
+                  <p className="comment-status">{commentStatus}</p>
+                )}
+              </div>
             </div>
           </form>
         </div>
-      </div>
-      <div className="status">
-        {commentStatus && <p className="comment-status">{commentStatus}</p>}
       </div>
     </div>
   );
