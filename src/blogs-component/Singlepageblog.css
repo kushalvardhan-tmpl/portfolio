@@ -237,16 +237,16 @@
 }
 .prev-Img img {
   width: 100px;
-  padding-block: 5px;
-  height: 100px;
+  padding-block: 20px;
+  height: 90px;
   object-fit: cover;
 }
 .next-Img img {
   width: 100px;
-  padding-top: 5px;
-  height: 100px;
+  /* padding-top: 5px; */
+  height: 90px;
   object-fit: cover;
-  padding-block: 5px;
+  padding-block: 20px;
 }
 .prev-Img {
   display: flex;
@@ -410,6 +410,15 @@
   }
 }
 @media (max-width: 520px) {
+  #search {
+    width: 60%;
+  }
+  .Tags h1 {
+    margin-bottom: 0px;
+  }
+  .popul-Tag {
+    justify-content: start;
+  }
   .date-author {
     gap: 20px;
     justify-content: center;

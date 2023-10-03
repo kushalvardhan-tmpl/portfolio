@@ -76,3 +76,8 @@
     font-weight: 500;
   }
 }
+@media (max-width: 850px) {
+  #title-img {
+    flex-direction: row;
+  }
+}
