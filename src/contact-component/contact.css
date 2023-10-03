@@ -151,7 +151,7 @@
 }
 @media (max-width: 450px) {
   .form form {
-    padding: 10px 30px 5px 20px;
+    padding: 10px 40px 5px 20px;
     width: 80%;
   }
   #textmsg {
@@ -169,7 +169,7 @@
   }
 
   .form {
-    justify-content: center;
+    /* justify-content: start; */
     height: 100%;
   }
   #fname {
@@ -194,6 +194,7 @@
   }
 
   .Sendbutton {
+    width: 100%;
     margin: 5px;
   }
   .inputForm h1 {
