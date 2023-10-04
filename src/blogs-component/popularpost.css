@@ -68,16 +68,12 @@
 @media (max-width: 850px) {
   #title-img {
     flex-direction: column;
+    align-items: flex-start;
   }
   .title-post {
     font-weight: 400;
   }
   .page-tags h1 {
     font-weight: 500;
-  }
-}
-@media (max-width: 850px) {
-  #title-img {
-    flex-direction: row;
   }
 }
