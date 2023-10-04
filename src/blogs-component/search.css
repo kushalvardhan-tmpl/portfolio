@@ -3,7 +3,7 @@
   /* flex-direction: column; */
   /* align-items: center; */
   padding-block: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .search-bar-container ::placeholder {
