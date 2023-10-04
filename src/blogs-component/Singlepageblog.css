@@ -84,7 +84,7 @@
   background-color: transparent;
   gap: 10px;
   padding: 10px 20px 10px 20px;
-  border: 1px white solid;
+  border: 2px white solid;
 }
 #facebookShare img {
   height: 30px;
@@ -98,7 +98,7 @@
   background-color: transparent;
   gap: 10px;
   padding: 10px 20px 10px 20px;
-  border: 1px white solid;
+  border: 2px white solid;
 }
 #twitterShare a {
   text-decoration: none;
@@ -119,7 +119,7 @@
   margin-right: 10px;
 }
 .page-heading {
-  border: 3px solid white;
+  border: 2px solid white;
   width: max-content;
   position: relative;
   bottom: 20px;
@@ -229,11 +229,11 @@
 
 .changePost {
   display: flex;
-  border: 1px solid white;
+  border: 2px solid white;
   align-items: center;
   gap: 5%;
   padding-inline: 15px;
-  margin-block: 15px;
+  margin-block: 100px;
 }
 .prev-Img img {
   width: 100px;
@@ -331,6 +331,7 @@
 @media (max-width: 768px) {
   .iconsblog {
     flex-direction: column;
+    margin-block: 50px;
   }
   .iconsblog button img {
     height: 30px;
@@ -527,6 +528,6 @@
     padding-left: 50px !important;
   }
   .changePost {
-    margin-bottom: 50px;
+    margin-block: 50px;
   }
 }

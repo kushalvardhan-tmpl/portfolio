@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   background-color: rgba(74, 69, 69, 1);
-  margin-block: 20px;
+  margin-bottom: 20px;
 }
 .comments {
   display: flex;
@@ -206,6 +206,8 @@
   }
   .Commentbutton button {
     font-size: 15px;
+    padding-inline: 20px;
+    padding-block: 10px;
   }
 }
 @media (max-width: 290px) {
@@ -235,5 +237,12 @@
   }
   #Name {
     padding-bottom: 15px;
+  }
+
+  .Commentbutton {
+    flex-direction: column;
+  }
+  .comment-status {
+    width: auto;
   }
 }

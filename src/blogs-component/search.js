@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./search.css";
@@ -30,10 +28,6 @@ const SearchResults = () => {
       });
   };
 
-  const handleHideResults = () => {
-    setShowResults(false);
-  };
-
   return (
     <div className="search-bar-container">
       <input
@@ -57,28 +51,35 @@ const SearchResults = () => {
       {/* Display search results container */}
       {showResults && (
         <div className="search-results-container">
-          <button onClick={handleHideResults} className="hide-results-button">
-            Hide Results
-          </button>
           {searchResults.length > 0 ? (
-            <div className="search-results">
-              <h2>Search Results:</h2>
-              <ul>
-                {searchResults.map((result, index) => (
-                  <li key={index}>
-                    <Link
-                      to={`/SinglePageblog/${result.id}`}
-                      className="search-result-link"
-                    >
-                      <div className="searchTitle">{result.title}</div>
-                      <div className="searchImage">
-                        <img src={result.image} alt={result.title} />
-                      </div>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <>
+              <button
+                onClick={() => {
+                  setShowResults(!showResults);
+                }}
+                className="hide-results-button"
+              >
+                Hide Results
+              </button>
+              <div className="search-results">
+                <h2>Search Results:</h2>
+                <ul>
+                  {searchResults.map((result, index) => (
+                    <li key={index}>
+                      <Link
+                        to={`/SinglePageblog/${result.id}`}
+                        className="search-result-link"
+                      >
+                        <div className="searchTitle">{result.title}</div>
+                        <div className="searchImage">
+                          <img src={result.image} alt={result.title} />
+                        </div>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </>
           ) : (
             showNoResultsMessage && (
               <div className="no-results-message">
