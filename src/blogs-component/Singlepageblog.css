@@ -330,7 +330,7 @@
 }
 @media (max-width: 768px) {
   .iconsblog {
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-block: 50px;
   }
   .iconsblog button img {
