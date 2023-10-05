@@ -91,7 +91,12 @@
 .hide-results-button:hover {
   background-color: rgba(164, 27, 27, 1);
 }
-
+.search-bar-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 550px) {
   .search-bar-container {
     margin-inline: 20px;
