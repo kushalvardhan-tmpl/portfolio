@@ -18,9 +18,9 @@ const SearchResults = () => {
         setShowResults(true);
         if (data.length === 0) {
           setShowNoResultsMessage(true);
-          setTimeout(() => {
-            setShowNoResultsMessage(false);
-          }, 3000);
+          // setTimeout(() => {
+          //   setShowNoResultsMessage(false);
+          // }, 3000);
         }
       })
       .catch((error) => {
