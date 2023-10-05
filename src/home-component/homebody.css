@@ -43,10 +43,11 @@
   background-color: rgba(164, 27, 27, 1);
 }
 
-@media (max-width: 968px) {
+@media (max-width: 1025px) {
   .headingcontainer {
     font-size: large;
     height: 70vh;
+    justify-content: center;
   }
 }
 @media (max-width: 570px) {
