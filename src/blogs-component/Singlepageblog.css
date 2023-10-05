@@ -204,6 +204,7 @@
   cursor: pointer;
 }
 .popul-Tag {
+  flex-wrap: wrap;
   display: flex;
   /* gap: 5px; */
   padding-top: 20px;

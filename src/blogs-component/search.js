@@ -34,7 +34,7 @@ const SearchResults = () => {
         <input
           id="search"
           type="text"
-          placeholder="Search for Blogs"
+          placeholder="Search Blogs"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="search-input"
