@@ -51,7 +51,7 @@
 }
 
 .search-button button:disabled {
-  background-color: gray;
+  background-color: maroon !important;
   cursor: not-allowed;
 }
 
