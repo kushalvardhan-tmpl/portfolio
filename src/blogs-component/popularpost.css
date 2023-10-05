@@ -72,8 +72,10 @@
   }
   .title-post {
     font-weight: 400;
+    margin-right: 5px;
   }
   .page-tags h1 {
     font-weight: 500;
+    margin-bottom: 5px;
   }
 }

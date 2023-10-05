@@ -29,25 +29,26 @@ const SearchResults = () => {
   };
 
   return (
-    <div className="search-bar-container">
-      <input
-        id="search"
-        type="text"
-        placeholder="Search for Blogs"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
-        className="search-input"
-      />
-      <div className="search-button">
-        <button
-          disabled={searchQuery === null}
-          onClick={handleSearch}
-          id="btn-search"
-        >
-          Search
-        </button>
+    <div className="search-bar-main">
+      <div className="search-bar-container">
+        <input
+          id="search"
+          type="text"
+          placeholder="Search for Blogs"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="search-input"
+        />
+        <div className="search-button">
+          <button
+            disabled={searchQuery === null}
+            onClick={handleSearch}
+            id="btn-search"
+          >
+            Search
+          </button>
+        </div>
       </div>
-
       {/* Display search results container */}
       {showResults && (
         <div className="search-results-container">
