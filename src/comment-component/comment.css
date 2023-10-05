@@ -177,9 +177,6 @@
   }
 }
 @media (max-width: 770px) {
-  .comments {
-    width: 80%;
-  }
   .details {
     flex-direction: column;
     gap: 5px;

@@ -64,6 +64,7 @@
   padding-right: 10px;
 }
 .blogheading h3 {
+  text-align: center;
   font-family: Inter;
   padding-inline: 30px;
   display: flex;
@@ -441,9 +442,6 @@
   }
 }
 @media (max-width: 520px) {
-  #search {
-    width: 60%;
-  }
   .Tags h1 {
     margin-bottom: 0px;
   }

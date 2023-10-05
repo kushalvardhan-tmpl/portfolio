@@ -99,6 +99,9 @@
 }
 @media (max-width: 550px) {
   .search-bar-container {
+    /* width: 100%; */
+    /* margin-inline: 20px; */
+    justify-content: center;
     margin-inline: 20px;
   }
   #search {
