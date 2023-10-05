@@ -5,7 +5,9 @@
   padding-block: 20px;
   /* flex-wrap: wrap; */
 }
-
+.no-results-message {
+  margin: 0px 20px 20px 20px;
+}
 .search-bar-container ::placeholder {
   color: white;
 }
@@ -85,8 +87,11 @@
   color: white;
   border: 1px white solid;
   padding: 5px 10px 5px 10px;
-  margin: 20px 5px 20px 5px;
+  /* margin: 10px 20px 10px 20px; */
   cursor: pointer;
+}
+.search-results-container {
+  margin-inline: 20px;
 }
 .hide-results-button:hover {
   background-color: rgba(164, 27, 27, 1);
