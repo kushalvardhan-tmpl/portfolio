@@ -70,13 +70,13 @@ const SinglePage = () => {
             <div className="shareButtons">
               <button id="facebookShare">
                 <Link to="https://www.facebook.com/">
-                  <img src={"/assets/fb-logo.png"} alt="fbLogo" /> Share on
+                  <img src={"/assets/Vector.svg"} alt="fbLogo" /> Share on
                   Facebook
                 </Link>
               </button>
               <button id="twitterShare">
                 <Link to="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
-                  <img src={"/assets/twitter-logo.png"} alt="tweetlogo" /> Share
+                  <img src={"/assets/Vector (1).svg"} alt="tweetlogo" /> Share
                   on Twitter
                 </Link>
               </button>
