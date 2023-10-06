@@ -461,7 +461,8 @@
   .shareButtons {
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
+    margin-inline: 25px !important;
   }
   .changePost {
     margin-inline: 20px;
@@ -489,12 +490,12 @@
     font-size: 20px;
     margin-block: 20px;
     /* margin-inline: 20px; */
-    padding-inline: 25px;
+    padding-inline: 0px;
   }
   .shareButtons {
     font-size: 15px;
-    width: 90%;
-    padding-left: 10px;
+    /* width: 90%;
+    padding-left: 10px; */
   }
   #facebookShare {
     justify-content: center;

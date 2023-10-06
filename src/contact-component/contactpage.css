@@ -156,6 +156,9 @@
   padding-block: 5px;
 }
 @media (max-width: 450px) {
+  .form-c {
+    top: 19px;
+  }
   #u-message {
     width: 90%;
     padding-inline: 10px;
@@ -163,6 +166,9 @@
   #p-textmsg {
     font-size: 15px;
     padding-top: 0px;
+  }
+  #p-textmsg label {
+    padding-bottom: 2px;
   }
   #p-email {
     width: 100%;
