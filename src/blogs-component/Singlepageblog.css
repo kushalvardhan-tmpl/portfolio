@@ -89,7 +89,7 @@
   border: 2px white solid;
 }
 #facebookShare img {
-  height: 30px;
+  /* height: 30px; */
   margin-right: 10px;
 }
 #twitterShare {
@@ -117,7 +117,7 @@
   display: flex;
 }
 #twitterShare img {
-  height: 30px;
+  /* height: 30px; */
   margin-right: 10px;
 }
 .page-heading {
@@ -294,6 +294,7 @@
   font-family: Inter;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #title-new-p {
   display: none;
