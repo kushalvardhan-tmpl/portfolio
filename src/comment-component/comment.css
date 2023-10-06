@@ -238,6 +238,7 @@
 
   .Commentbutton {
     flex-direction: column;
+    gap: 0;
   }
   .comment-status {
     width: auto;
