@@ -93,9 +93,7 @@ function ContactPage() {
             <form>
               <div className="f-fullName">
                 <div id="firstname">
-                  <label htmlFor="fname">
-                    <b>First Name</b>
-                  </label>
+                  <label htmlFor="fname">First Name</label>
                   <input
                     type="text"
                     id="fname"
@@ -106,9 +104,7 @@ function ContactPage() {
                   />
                 </div>
                 <div id="lastname">
-                  <label htmlFor="lname">
-                    <b>Last Name </b>
-                  </label>
+                  <label htmlFor="lname">Last Name</label>
                   <input
                     type="text"
                     id="lname"
@@ -142,9 +138,7 @@ function ContactPage() {
                 />
               </div>
               <div className="Send-btn">
-                <button onClick={handleSubmit}>
-                  <b>Send Me</b>
-                </button>
+                <button onClick={handleSubmit}>Send Me</button>
               </div>
             </form>
           </div>

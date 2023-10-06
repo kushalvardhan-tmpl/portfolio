@@ -47,7 +47,7 @@
   flex-direction: column;
   margin-bottom: 20px;
   font-size: 34px;
-  font-family: "Inter";
+  font-family: "Inter" !important;
   font-weight: 700;
 }
 #fname {
@@ -84,7 +84,10 @@
   margin-block: 20px;
   font-weight: 700;
   font-size: 34px;
+}
+#mail label {
   font-family: Inter;
+  font-weight: 700;
 }
 #textmsg {
   display: flex;
@@ -92,10 +95,12 @@
   flex-direction: column;
   padding: 15px 0px 10px 0px;
   font-weight: 700;
-  font-family: Inter;
   font-size: 34px;
 }
-
+#textmsg label {
+  font-family: Inter;
+  font-weight: 700;
+}
 #email {
   padding: 10px;
   border: 0;
