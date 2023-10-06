@@ -13,11 +13,11 @@
 #heading-contact {
   display: flex;
   justify-content: center;
-
   z-index: 2;
 }
 #heading-contact h1 {
   border: 2px solid white;
+  font-family: "Inter" !important;
   width: fit-content;
   position: absolute;
   background-color: rgba(74, 69, 69, 1);
@@ -28,7 +28,7 @@
   font-size: 20px;
   font-weight: 700;
   position: relative;
-  top: 30px;
+  top: 26px;
   z-index: 1;
   padding-inline: 25px;
 }
@@ -39,6 +39,18 @@
   display: flex;
   padding: 70px 0px 0px 0px;
   gap: 50px;
+}
+#firstname label {
+  font-family: inter;
+  font-weight: 700;
+}
+#lastname label {
+  font-family: inter;
+  font-weight: 700;
+}
+#u-mail label {
+  font-family: inter;
+  font-weight: 700;
 }
 .Send-btn {
   display: flex;
@@ -53,6 +65,8 @@
   border-radius: 30px;
   font-size: 25px;
   cursor: pointer;
+  font-weight: 700;
+  font-family: Inter;
 }
 .Send-btn button:hover {
   background-color: rgba(164, 27, 27, 1);
@@ -76,18 +90,20 @@
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 34px;
-  font-family: Inter;
-  font-weight: 700;
   border: 2px solid white;
   position: absolute;
   z-index: 2;
   background-color: rgba(74, 69, 69, 1);
   padding-inline: 10px;
 }
+.maps-head h3 {
+  font-family: Inter;
+  font-size: 34px !important;
+  font-weight: 700;
+}
 #maps {
   position: relative;
-  top: 0px;
+  top: -8px;
 
   border: 2px solid white;
   padding: 20px;
@@ -124,6 +140,10 @@
   font-weight: 700;
   font-family: Inter;
   font-size: 34px;
+}
+#p-textmsg label {
+  font-family: inter;
+  font-weight: 700;
 }
 #u-message {
   background: rgba(244, 241, 241, 0.6);
@@ -166,6 +186,7 @@
     width: 75%;
     padding-top: 30px;
     margin: 0;
+    top: -4px;
   }
   .Send-btn button {
     padding: 5px 15px 5px 15px;
@@ -178,9 +199,12 @@
   }
 
   .maps-head {
-    font-size: 12px;
     margin: -12px;
   }
+  .maps-head h3 {
+    font-size: 12px !important;
+  }
+
   .f-fullName {
     flex-direction: column;
     gap: 0;
